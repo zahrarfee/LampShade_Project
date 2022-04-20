@@ -18,7 +18,7 @@
       data-action="Refresh"
       enctype="multipart/form-data">
     <div class="modal-body">
-        <input type="hidden" asp-for="Id" value="@Model.Id"/>
+        <input type="hidden" asp-for="Id" value="@Model.Id" />
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
@@ -33,7 +33,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="PictureAlt" class="control-label">توضیح عکس</label>
-                    <input type="text" class="form-control" asp-for="PictureAlt" onchange="fillField('PictureAlt', 'PictureTitle')"/>
+                    <input type="text" class="form-control" asp-for="PictureAlt" onchange="fillField('PictureAlt', 'PictureTitle')" />
                     <span asp-validation-for="PictureAlt" class="error"></span>
                 </div>
             </div>
@@ -53,7 +53,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="Heading" class="control-label">تیتر</label>
-                    <input type="text" class="form-control" asp-for="Heading"/>
+                    <input type="text" class="form-control" asp-for="Heading" />
                     <span asp-validation-for="Heading" class="error"></span>
                 </div>
             </div>
@@ -95,6 +95,15 @@
 
 
 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="Link" class="control-label">لینک</label>
+                    <input type="text" class="form-control" asp-for="Link">
+                    <span asp-validation-for="Link" class="error"></span>
+                </div>
+            </div>
+        </div>
 
 
 

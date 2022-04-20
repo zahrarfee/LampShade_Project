@@ -175,3 +175,6 @@ F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Adminis
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Index.cshtml.g.cs
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Slides\Edit.cshtml.g.cs
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shared\-Menu.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\01_LampshadeQuery.dll
+F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\01_LampshadeQuery.pdb
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Slide\Default.cshtml.g.cs

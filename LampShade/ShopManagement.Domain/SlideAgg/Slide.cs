@@ -15,8 +15,9 @@ namespace ShopManagement.Domain.SlideAgg
         public string Text { get; private set; }
         public string BtnText { get; private set; }
         public bool IsRemoved { get; private set; }
+        public string Link { get; set; }
 
-        public Slide(string picure, string pictureAlt, string picureTitle, string heading, string title, string text, string btnText)
+        public Slide(string picure, string pictureAlt, string picureTitle, string heading, string title, string text, string btnText,string link)
         {
             Picure = picure;
             PictureAlt = pictureAlt;
@@ -26,8 +27,9 @@ namespace ShopManagement.Domain.SlideAgg
             Text = text;
             BtnText = btnText;
             IsRemoved = false;
+            Link = link;
         }
-        public void Edit(string picure, string pictureAlt, string picureTitle, string heading, string title, string text, string btnText)
+        public void Edit(string picure, string pictureAlt, string picureTitle, string heading, string title, string text, string btnText,string ink)
         {
             Picure = picure;
             PictureAlt = pictureAlt;
@@ -36,7 +38,8 @@ namespace ShopManagement.Domain.SlideAgg
             Title = title;
             Text = text;
             BtnText = btnText;
-            
+            Link = Link;
+
         }
 
         public void Remove()
