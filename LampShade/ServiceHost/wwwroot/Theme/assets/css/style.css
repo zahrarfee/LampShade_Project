@@ -2084,6 +2084,7 @@ select {
 .single-category-item {
 	position: relative;
 	margin-bottom: 20px;
+    
 }
 
 .single-category-item--style2 {
@@ -2107,6 +2108,9 @@ select {
 	position: absolute;
 	top: 38px;
 	left: 30px;
+    
+    
+    
 }
 
 .single-category-item__content--style2 {
