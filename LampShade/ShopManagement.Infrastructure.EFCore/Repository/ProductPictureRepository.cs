@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using _0_Framework.Application;
 using _0_Framework.Infrastracture;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.ProductPicture;
@@ -23,7 +24,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 .Select(x => new ProductPictureViewModel
                 {
                     Id = x.Id,
-                    CreationDate = x.CreationDate.ToString(),
+                    CreationDate = x.CreationDate.ToFarsi(),
                     Picture = x.Picture,
                     Product = x.Product.Name,
                     ProductId=x.ProductId

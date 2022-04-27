@@ -1,0 +1,17 @@
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.deps.json
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\obj\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.csproj.AssemblyReference.cache
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\obj\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\obj\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.AssemblyInfoInputs.cache
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\obj\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.AssemblyInfo.cs
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\obj\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\obj\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\obj\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\0_Framework.dll
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\0_Framework.pdb
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\obj\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.csproj.CopyComplete
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\ShopManagement.Domain.dll
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\ShopManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\DiscountManagement.Application.Contracts\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.pdb

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using _0_Framework.Application;
 using _0_Framework.Infrastracture;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
@@ -31,7 +32,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 UnitPrice = x.UnitPrice,
                 CategoryId = x.CategoryId,
                 Picture = x.Picture,
-                CreationDate = x.CreationDate.ToString(),
+                CreationDate = x.CreationDate.ToFarsi(),
                 Category = x.Category.Name,
                 IsInStock = x.IsInStock
 

@@ -35,10 +35,12 @@ $(document).ready(function () {
     $("#MainModal").on("shown.bs.modal",
         function () {
             window.location.hash = "##";
-            $('.persianDateInput').persianDatepicker({
-                format: 'YYYY/MM/DD',
-                autoClose: true
+            $('.observer-example').persianDatepicker({
+                format: 'YYYY/MM/DD, a mm :h',
+                autoClose: true,
+                initialValueType: "persian"
             });
+           
         });
 
     $(document).on("submit",
@@ -69,6 +71,7 @@ $(document).ready(function () {
                     contentType: false,
                     success: function (data) {
                         CallBackHandler(data, action, form);
+                        
                     },
                     error: function (data) {
                         alert("خطایی رخ داده است. لطفا با مدیر سیستم تماس بگیرید.");
