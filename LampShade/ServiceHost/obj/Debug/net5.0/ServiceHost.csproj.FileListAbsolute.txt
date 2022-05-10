@@ -209,3 +209,9 @@ F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement
 F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Application.Contract.pdb
 F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Domain.pdb
 F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\InventoryManagement.Infrastracture.EFCore.pdb
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Create.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Edit.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Index.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Increase.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\Reduce.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Inventory\OperationLog.cshtml.g.cs

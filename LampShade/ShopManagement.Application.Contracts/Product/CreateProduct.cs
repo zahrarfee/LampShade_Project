@@ -15,8 +15,7 @@ namespace ShopManagement.Application.Contracts.Product
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string Code { get; set; }
 
-        [Required(ErrorMessage = ValidationMessages.IsRequired)]
-        public double UnitPrice { get; set; }
+   
 
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string ShortDescription { get; set; }
@@ -38,7 +37,7 @@ namespace ShopManagement.Application.Contracts.Product
         [Range(0,100000,ErrorMessage = ValidationMessages.IsRequired)]
         public long CategoryId { get; set; }
         public List<ProductCategoryViewModel> Categories { get; set; }
-        public bool IsInStock { get; set; }
+        
         
 
     }

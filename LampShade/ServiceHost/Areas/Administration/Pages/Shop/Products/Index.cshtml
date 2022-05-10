@@ -62,8 +62,7 @@
                                     <th>عکس</th>
                                     <th>نام</th>
                                     <th>کد</th>
-                                    <th>قیمت</th>
-                                    <th>موجودی</th>
+                           
                                     <th>تاریخ تولید</th>
                                     <th>نام گروه</th>
                                     <th>عملیات</th>
@@ -80,23 +79,7 @@
 
                                         <td>@item.Name</td>
                                         <td>@item.Code</td>
-                                        <td>@item.UnitPrice</td>
-                                        <td class="text-center">
-                                            @if (item.IsInStock == false)
-                                            {
-                                                 <i class="fa fa-remove fa-2x text-danger"></i>
-                                               
-                                            
-                                            }
-                                            @if (item.IsInStock == true)
-                                            {
-                                             <i class="fa fa-check fa-2x text-success"></i>
-                                           
-                                            
-                                            }
-
-                                        </td>
-                                        
+                                     
                                         
                                        
                                         <td>@item.CreationDate</td>
@@ -113,20 +96,7 @@
                                                     <i class="fa fa-remove"></i>حذف
                                                 </a>
                                             
-                                            @if (item.IsInStock == false)
-                                            {
-                                                <a class="btn btn-success btn-custom waves-effect waves-light m-b-5"
-                                                  asp-page="./Index" asp-page-handler="Restore" asp-route-id="@item.Id">
-                                                  <i class="fa fa-restore"></i>موجود کن
-                                                </a>
-                                            }
-                                            @if (item.IsInStock ==true)
-                                            {
-                                                <a class="btn btn-purple btn-custom waves-effect waves-light m-b-5"
-                                                   asp-page="./Index"  asp-page-handler="Remove" asp-route-id="@item.Id">
-                                                    <i class="fa fa-remove"></i>ناموجود
-                                                </a>
-                                            }
+                                          
 
                                         </td>
                                     </tr>

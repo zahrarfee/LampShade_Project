@@ -12,8 +12,7 @@ namespace ShopManagement.Application.Contracts.Product
         OperationResult Remove(EditProduct command);
         List<ProductViewModel> Search(ProductSearchModel searchModel);
         EditProduct GetDetails(long id);
-        OperationResult InStock(long id);
-        OperationResult NotInStock(long id);
+
         List<ProductViewModel> GetProducts();
 
 

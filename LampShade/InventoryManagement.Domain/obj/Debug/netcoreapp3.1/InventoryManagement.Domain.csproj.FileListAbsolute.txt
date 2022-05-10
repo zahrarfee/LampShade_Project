@@ -13,3 +13,5 @@ F:\Practice\LampShade\LampShade\InventoryManagement.Domain\obj\Debug\netcoreapp3
 F:\Practice\LampShade\LampShade\InventoryManagement.Domain\obj\Debug\netcoreapp3.1\InventoryManagement.Domain.pdb
 F:\Practice\LampShade\LampShade\InventoryManagement.Domain\bin\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.dll
 F:\Practice\LampShade\LampShade\InventoryManagement.Domain\bin\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.pdb
+F:\Practice\LampShade\LampShade\InventoryManagement.Domain\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\InventoryManagement.Domain\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.pdb

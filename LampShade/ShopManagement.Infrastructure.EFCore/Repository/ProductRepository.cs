@@ -29,12 +29,12 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Name = x.Name,
                 Code = x.Code,
-                UnitPrice = x.UnitPrice,
+              
                 CategoryId = x.CategoryId,
                 Picture = x.Picture,
                 CreationDate = x.CreationDate.ToFarsi(),
                 Category = x.Category.Name,
-                IsInStock = x.IsInStock
+               
 
             });/*.Where(x => x.IsInStock == true);*/
             if (!string.IsNullOrWhiteSpace(searchModel.Name))
@@ -62,7 +62,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Picture = x.Picture,
                 PictureTitle = x.PictureTitle,
                 PictureAlt = x.PictureAlt,
-                UnitPrice = x.UnitPrice,
+                
                 CategoryId = x.CategoryId,
 
                 MetaDescription = x.MetaDescription,

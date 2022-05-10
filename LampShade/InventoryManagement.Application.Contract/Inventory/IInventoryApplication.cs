@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Extensions.Logging.Abstractions;
 
 namespace InventoryManagement.Application.Contract.Inventory
 {
@@ -14,6 +15,7 @@ namespace InventoryManagement.Application.Contract.Inventory
         OperationResult Reduce(ReduceInventory command);//karbar
         List<InventoryViewModel> Search(InventorySearchModel searchModel);
         EditInventory GetDetails(long id);
+        List<InventoryOperationViewModel> GetOperationLog(long inventoryId);
 
     }
 }

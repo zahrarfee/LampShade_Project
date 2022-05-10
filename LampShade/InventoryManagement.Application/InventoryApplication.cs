@@ -93,5 +93,10 @@ namespace InventoryManagement.Application
         {
             return _inventoryRepository.GetDetails(id);
         }
+
+        public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
+        {
+           return _inventoryRepository.GetOperationLog(inventoryId);
+        }
     }
 }
