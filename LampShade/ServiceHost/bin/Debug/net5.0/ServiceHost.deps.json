@@ -2430,6 +2430,8 @@
       "01_LampshadeQuery/1.0.0": {
         "dependencies": {
           "0_Framework": "1.0.0",
+          "DiscountManagement.Infrastracture.EFCore": "1.0.0",
+          "InventoryManagement.Infrastracture.EFCore": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
         },
         "runtime": {

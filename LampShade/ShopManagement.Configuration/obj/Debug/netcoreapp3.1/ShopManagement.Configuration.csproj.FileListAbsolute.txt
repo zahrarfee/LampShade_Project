@@ -21,3 +21,15 @@ F:\Practice\LampShade\LampShade\ShopManagement.Configuration\obj\Debug\netcoreap
 F:\Practice\LampShade\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp3.1\ShopManagement.Configuration.pdb
 F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\01_LampshadeQuery.dll
 F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\01_LampshadeQuery.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Domain.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Infrastracture.EFCore.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Domain.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.EFCore.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Infrastracture.EFCore.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.EFCore.pdb
