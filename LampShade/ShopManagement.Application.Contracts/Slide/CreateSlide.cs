@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using _0_Framework.Application;
+using Microsoft.AspNetCore.Http;
 
 namespace ShopManagement.Application.Contracts.Slide
 {
     public class CreateSlide
     {
-        public string Picure { get; set; }
+        [FileExtentionLimitation(new string[] { ".jpg", ".jpeg", ".png" }, ErrorMessage = ValidationMessages.InvalidFileFormat)]
+        [MaxFileSize(3 * 1024 * 1024, ErrorMessage = ValidationMessages.MaxFileSize)]
+        public IFormFile Picure { get; set; }
         public string PictureAlt { get; set; }
         public string PicureTitle { get; set; }
         public string Heading { get; set; }

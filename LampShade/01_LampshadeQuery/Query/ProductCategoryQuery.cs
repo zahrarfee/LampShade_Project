@@ -61,7 +61,7 @@ namespace _01_LampshadeQuery.Query
                     Slug = x.Slug,
                     Keywords = x.Keywords,
                     Products = MapProducts(x.Products)
-                }).FirstOrDefault(x =>
+                }).AsNoTracking().FirstOrDefault(x =>
                     x.Slug == slug);
             foreach (var product in category.Products)
             {
@@ -75,7 +75,7 @@ namespace _01_LampshadeQuery.Query
                     {
                         int discountRate = discount.DiscountRate;
                         product.DiscountRate = discountRate;
-                        product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); product.DiscountExpireDate = discount.EndDate.ToDiscountFormat();
+                        product.DiscountExpireDate = discount.EndDate.ToDiscountFormat(); 
 
                         product.HasDiscount = discountRate > 0;
                         var discountAmount = Math.Round((price * discountRate) / 100);

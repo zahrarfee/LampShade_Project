@@ -8,11 +8,13 @@ namespace ShopManagement.Application
 {
     public class ProductCategoryApplication:IProductCategoryApplication
     {
+        private readonly IFileUploader _fileUploader;
         private readonly IProductCategoryRepository _productCategoryRepository;
 
-        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository)
+        public ProductCategoryApplication(IProductCategoryRepository productCategoryRepository, IFileUploader fileUploader)
         {
             _productCategoryRepository = productCategoryRepository;
+            _fileUploader = fileUploader;
         }
 
         public OperationResult Create(CreateProductCategory command)
@@ -21,7 +23,11 @@ namespace ShopManagement.Application
             if (_productCategoryRepository.Exist(x=>x.Name==command.Name))
                 return operation.Failed(ApplicationMessage.DublicatedRecord);
             var slug = command.Slug.Slugify();
-            var productCategory=new ProductCategory(command.Name,command.Description,command.Picture,command.PictureTitle,command.PictureAlt,command.Keywords,command.MetaDescription,slug);
+         
+            var picturePath = $"{command.Slug}";
+            var fileName = _fileUploader.Upload(command.Picture, picturePath);
+
+            var productCategory=new ProductCategory(command.Name,command.Description,fileName,command.PictureTitle,command.PictureAlt,command.Keywords,command.MetaDescription,slug);
             _productCategoryRepository.Create(productCategory);
             _productCategoryRepository.SaveChange();
             return operation.Succeced();
@@ -37,7 +43,9 @@ namespace ShopManagement.Application
             if(_productCategoryRepository.Exist(x=>x.Name==command.Name && x.Id!=command.Id))
                 return operationResult.Failed(ApplicationMessage.DublicatedRecord);
             var slug = command.Slug.Slugify();
-            categoryProduct.Edit(command.Name,command.Description,command.Picture,command.PictureTitle,command.PictureAlt,command.Keywords,command.MetaDescription,slug);
+            var picturePath = $"{command.Slug}";
+            var fileName = _fileUploader.Upload(command.Picture, picturePath);
+            categoryProduct.Edit(command.Name,command.Description,fileName,command.PictureTitle,command.PictureAlt,command.Keywords,command.MetaDescription,slug);
             _productCategoryRepository.SaveChange();
             return operationResult.Succeced();
         }

@@ -1,6 +1,6 @@
 ﻿var SinglePage = {};
 
-SinglePage.LoadModal = function () {
+SinglePage.LoadModal = function() {
     var url = window.location.hash.toLowerCase();
     if (!url.startsWith("#showmodal")) {
         return;
@@ -8,16 +8,16 @@ SinglePage.LoadModal = function () {
     url = url.split("showmodal=")[1];
     $.get(url,
         null,
-        function (htmlPage) {
+        function(htmlPage) {
             $("#ModalContent").html(htmlPage);
             const container = document.getElementById("ModalContent");
             const forms = container.getElementsByTagName("form");
             const newForm = forms[forms.length - 1];
             $.validator.unobtrusive.parse(newForm);
             showModal();
-        }).fail(function (error) {
-            alert("خطایی رخ داده، لطفا با مدیر سیستم تماس بگیرید.");
-        });
+        }).fail(function(error) {
+        alert("خطایی رخ داده، لطفا با مدیر سیستم تماس بگیرید.");
+    });
 };
 
 function showModal() {
@@ -28,25 +28,25 @@ function hideModal() {
     $("#MainModal").modal("hide");
 }
 
-$(document).ready(function () {
-    window.onhashchange = function () {
+$(document).ready(function() {
+    window.onhashchange = function() {
         SinglePage.LoadModal();
     };
     $("#MainModal").on("shown.bs.modal",
-        function () {
+        function() {
             window.location.hash = "##";
             $('.observer-example').persianDatepicker({
                 format: 'YYYY/MM/DD, a mm :h',
                 autoClose: true,
                 initialValueType: "persian"
             });
-           
+
         });
 
     $(document).on("submit",
         'form[data-ajax="true"]',
-        function (e) {
-            e.preventDefault();
+        function(e) {
+            e.preventDefault(); //for fileupload
             var form = $(this);
             const method = form.attr("method").toLocaleLowerCase();
             const url = form.attr("action");
@@ -56,24 +56,24 @@ $(document).ready(function () {
                 const data = form.serializeArray();
                 $.get(url,
                     data,
-                    function (data) {
+                    function(data) {
                         CallBackHandler(data, action, form);
                     });
             } else {
-                var formData = new FormData(this);
+                var formData = new FormData(this); //fileupload
                 $.ajax({
                     url: url,
                     type: "post",
-                    data: formData,
-                    enctype: "multipart/form-data",
+                    data: formData, //fileupload
+                    enctype: "multipart/form-data", //fileupload
                     dataType: "json",
-                    processData: false,
-                    contentType: false,
-                    success: function (data) {
+                    processData: false, //fileupload
+                    contentType: false, //fileupload
+                    success: function(data) {
                         CallBackHandler(data, action, form);
-                        
+
                     },
-                    error: function (data) {
+                    error: function(data) {
                         alert("خطایی رخ داده است. لطفا با مدیر سیستم تماس بگیرید.");
                     }
                 });
@@ -84,31 +84,31 @@ $(document).ready(function () {
 
 function CallBackHandler(data, action, form) {
     switch (action) {
-        case "Message":
-            alert(data.Message);
-            break;
-        case "Refresh":
-            if (data.isSucceced) {
-                window.location.reload();
-            } else {
-                alert(data.message);
-            }
-            break;
-        case "RefereshList":
-            {
-                hideModal();
-                const refereshUrl = form.attr("data-refereshurl");
-                const refereshDiv = form.attr("data-refereshdiv");
-                get(refereshUrl, refereshDiv);
-            }
-            break;
-        case "setValue":
-            {
-                const element = form.data("element");
-                $(`#${element}`).html(data);
-            }
-            break;
-        default:
+    case "Message":
+        alert(data.Message);
+        break;
+    case "Refresh":
+        if (data.isSucceced) {
+            window.location.reload();
+        } else {
+            alert(data.message);
+        }
+        break;
+    case "RefereshList":
+        {
+            hideModal();
+            const refereshUrl = form.attr("data-refereshurl");
+            const refereshDiv = form.attr("data-refereshdiv");
+            get(refereshUrl, refereshDiv);
+        }
+        break;
+    case "setValue":
+        {
+            const element = form.data("element");
+            $(`#${element}`).html(data);
+        }
+        break;
+    default:
     }
 }
 
@@ -116,7 +116,7 @@ function get(url, refereshDiv) {
     const searchModel = window.location.search;
     $.get(url,
         searchModel,
-        function (result) {
+        function(result) {
             $("#" + refereshDiv).html(result);
         });
 }
@@ -126,7 +126,7 @@ function makeSlug(source, dist) {
     $('#' + dist).val(convertToSlug(value));
 }
 
-var convertToSlug = function (str) {
+var convertToSlug = function(str) {
     var $slug = '';
     const trimmed = $.trim(str);
     $slug = trimmed.replace(/[^a-z0-9-آ-ی-]/gi, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
@@ -138,7 +138,7 @@ function checkSlugDuplication(url, dist) {
     const id = convertToSlug(slug);
     $.get({
         url: url + '/' + id,
-        success: function (data) {
+        success: function(data) {
             if (data) {
                 sendNotification('error', 'top right', "خطا", "اسلاگ نمی تواند تکراری باشد");
             }
@@ -153,7 +153,7 @@ function fillField(source, dist) {
 
 $(document).on("click",
     'button[data-ajax="true"]',
-    function () {
+    function() {
         const button = $(this);
         const form = button.data("request-form");
         const data = $(`#${form}`).serialize();
@@ -179,11 +179,11 @@ function handleAjaxCall(method, url, data) {
             data,
             "application/json; charset=utf-8",
             "json",
-            function (data) {
+            function(data) {
 
-            }).fail(function (error) {
-                alert("خطایی رخ داده است. لطفا با مدیر سیستم تماس بگیرید.");
-            });
+            }).fail(function(error) {
+            alert("خطایی رخ داده است. لطفا با مدیر سیستم تماس بگیرید.");
+        });
     }
 }
 
@@ -197,17 +197,40 @@ function handleAjaxCall(method, url, data) {
 //            return true;
 //        }
 //    });
+
+
+jQuery.validator.addMethod("maxFileSize",
+    function(value, element, params) {
+        var size = element.files[0].size;
+        var maxSize = 3 * 1024 * 1024;
+        debugger;
+        if (size > maxSize)
+            return false;
+        else {
+            return true;
+        }
+    });
 jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
 
-//jQuery.validator.addMethod("maxFileSize",
-//    function (value, element, params) {
-//        var size = element.files[0].size;
-//        var maxSize = 3 * 1024 * 1024;
-//        debugger;
-//        if (size > maxSize)
-//            return false;
-//        else {
-//            return true;
-//        }
-//    });
-//jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
+
+jQuery.validator.addMethod("fileExtentionLimitation",
+    function (value, element, params) {
+
+        var extention = path.getExtension(element.files[0].filename);
+
+          
+        var extensions = [".jpg", ".jpeg", ".png"];
+        debugger;
+
+     
+        if (extensions.Contains(extention))
+        {
+            return true;
+
+        }
+        else
+            return false;
+
+
+    });
+jQuery.validator.unobtrusive.adapters.addBool("fileExtentionLimitation");

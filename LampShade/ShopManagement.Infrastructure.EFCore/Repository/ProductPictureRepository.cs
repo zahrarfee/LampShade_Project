@@ -39,7 +39,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
             return _shopContext.ProductPictures.Select(x => new EditProductPicture
             {
                 Id = x.Id,
-                Picture = x.Picture,
+                //Picture = x.Picture,
                 PictureTitle = x.PictureTitle,
                 PictureAlt = x.PictureAlt,
                 ProductId = x.ProductId

@@ -36,7 +36,7 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Name = x.Name,
                 Description = x.Description,
-                Picture = x.Picture,
+                //Picture = x.Picture,
                 PictureAlt = x.PictureAlt,
                 PictureTitle = x.PictureTitle,
                 MetaDescription = x.MetaDescription,
@@ -69,6 +69,11 @@ namespace ShopManagement.Infrastructure.EFCore.Repository
                 Id = x.Id,
                 Name = x.Name
             }).ToList();
+        }
+
+        public string GetSlugById(long id)
+        {
+           return _shopContext.productCategories.Select(x=>new {x.Id,x.Slug}).FirstOrDefault(x => x.Id == id).Slug;
         }
     }
 }

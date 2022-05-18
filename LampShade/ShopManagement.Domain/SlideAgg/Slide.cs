@@ -31,7 +31,9 @@ namespace ShopManagement.Domain.SlideAgg
         }
         public void Edit(string picure, string pictureAlt, string picureTitle, string heading, string title, string text, string btnText,string ink)
         {
-            Picure = picure;
+            if (!string.IsNullOrWhiteSpace(picure))
+                Picure = picure;
+          
             PictureAlt = pictureAlt;
             PicureTitle = picureTitle;
             Heading = heading;
