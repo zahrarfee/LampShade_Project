@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using _01_LampshadeQuery.Contracts.ProductPicture;
 
 namespace _01_LampshadeQuery.Contracts.Product
 {
@@ -11,6 +12,7 @@ namespace _01_LampshadeQuery.Contracts.Product
         public string PictureAlt { get; set; }
         public string PictureTitle { get; set; }
         public string Name { get; set; }
+        public string Code { get;set; }
         public string Price { get; set; }
         public string PriceWithDiscount { get; set; }
         public int DiscountRate { get; set; }
@@ -20,6 +22,12 @@ namespace _01_LampshadeQuery.Contracts.Product
         public string DiscountExpireDate { get; set; }
         public string ShortDescription { get; set; }
         public string CategorySlug { get; set; }
+        public string Description { get;set; }
+        
+        public string MetaDescription { get; set; }
+
+        public string Keywords { get; set; }
+        public List<ProductPictureQueryModel> ProductPictures { get; set; }
 
     }
 }

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace ServiceHost
 {
-    public class FileUploader:IFileUploader
+    public class FileUploader : IFileUploader
     {
         private readonly IWebHostEnvironment _webHostEnvironment;
 
@@ -18,20 +18,18 @@ namespace ServiceHost
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public string Upload(IFormFile file,string path)
+        public string Upload(IFormFile file, string path)
         {
-            if (file == null)
-                return "";
-              var pathDirectory = $"{_webHostEnvironment.WebRootPath}//ProductPictures//{path}";
-              if (!Directory.Exists(pathDirectory))
-              {
-                  Directory.CreateDirectory(pathDirectory);
+            if (file == null) return "";
 
-              }
+            var directoryPath = $"{_webHostEnvironment.WebRootPath}//ProductPictures//{path}";
 
-              var fileName = $"{DateTime.Now.ToFileName()}-{file.FileName}"; 
-              var filepath = $"{pathDirectory}//{fileName}";
-            using var output=System.IO.File.Create(filepath );
+            if (!Directory.Exists(directoryPath))
+                Directory.CreateDirectory(directoryPath);
+
+            var fileName = $"{DateTime.Now.ToFileName()}-{file.FileName}";
+            var filePath = $"{directoryPath}//{fileName}";
+            using var output = File.Create(filePath);
             file.CopyTo(output);
             return $"{path}/{fileName}";
         }

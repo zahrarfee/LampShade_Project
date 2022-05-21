@@ -48,7 +48,7 @@ namespace _01_LampshadeQuery.Query
 
             var discounts = _discountContext.CustomerDiscounts
                 .Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now)
-                .Select(x => new {x.ProductId, x.DiscountRate,x.EndDate});
+                .Select(x => new {x.ProductId, x.DiscountRate,x.EndDate}).ToList();
 
             var category = _shopContext.productCategories.Include(x => x.Products)
                 .ThenInclude(x => x.Category)
