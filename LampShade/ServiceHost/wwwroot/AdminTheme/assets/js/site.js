@@ -85,7 +85,7 @@ function CallBackHandler(data, action, form) {
             alert(data.Message);
             break;
         case "Refresh":
-            if (data.isSuccedded) {
+            if (data.isSucceced) {
                 window.location.reload();
             } else {
                 alert(data.message);
@@ -184,6 +184,8 @@ function handleAjaxCall(method, url, data) {
     }
 }
 
+
+
 jQuery.validator.addMethod("maxFileSize",
     function (value, element, params) {
         var size = element.files[0].size;
@@ -198,18 +200,18 @@ jQuery.validator.unobtrusive.adapters.addBool("maxFileSize");
 
 
 
-jQuery.validator.addMethod("fileExtensionLimitation",
-    function (value, element, params) {
+//jQuery.validator.addMethod("fileExtensionLimitation",
+//    function (value, element, params) {
 
-        var extention = Path.getExtension(element.files[0].filename);
-        var extensions = [".jpg", ".jpeg", ".png"];
-        debugger;
+//        var extention = Path.getExtension(element.files[0].filename);
+//        var extensions = [".jpg", ".jpeg", ".png"];
+//        debugger;
 
-        if (extensions.Contains(extention))
-        {
-            return true;
-        }
-        else
-            return false;
-    });
-jQuery.validator.unobtrusive.adapters.addBool("fileExtensionLimitation");
+//        if (extensions.Contains(extention))
+//        {
+//            return true;
+//        }
+//        else
+//            return false;
+//    });
+//jQuery.validator.unobtrusive.adapters.addBool("fileExtensionLimitation");

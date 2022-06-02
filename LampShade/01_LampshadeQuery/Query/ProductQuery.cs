@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using _0_Framework.Application;
+using _01_LampshadeQuery.Contracts.Comment;
 using _01_LampshadeQuery.Contracts.Product;
 using _01_LampshadeQuery.Contracts.ProductCategory;
 using _01_LampshadeQuery.Contracts.ProductPicture;
@@ -10,6 +11,7 @@ using DiscountManagement.Infrastracture.EFCore;
 using InventoryManagement.Infrastracture.EFCore;
 using Microsoft.EntityFrameworkCore;
 using ShopManagement.Application.Contracts.Product;
+using ShopManagement.Domain.CommentAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
@@ -140,8 +142,11 @@ namespace _01_LampshadeQuery.Query
         {
             var discounts  = _discountContext.CustomerDiscounts.Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now).Select(x => new {x.ProductId, x.DiscountRate,x.EndDate}).ToList();
             var inventories = _inventoryContext.Inventories.Select(x => new {x.ProductId, x.UnitPrice}).ToList();
-            var product = _shopContext.Products.Include(x=>x.Category)
-                .Include(x=>x.ProductPictureses).Select(x => new ProductQueryModel
+            var product = _shopContext.Products
+                .Include(x=>x.Category)
+                .Include(x=>x.Comments)
+                .Include(x=>x.ProductPictureses)                
+                .Select(x => new ProductQueryModel
             {
                 Category = x.Category.Name,
                 Id = x.Id,
@@ -156,9 +161,10 @@ namespace _01_LampshadeQuery.Query
                 CategorySlug = x.Category.Slug,
                 Keywords = x.Keywords,
                 MetaDescription = x.MetaDescription,
-                    ProductPictures = MapProductPicture(x.ProductPictureses)
+                    ProductPictures = MapProductPicture(x.ProductPictureses),
+                    Comments = MapComment(x.Comments)
 
-                }).AsNoTracking().FirstOrDefault(x=>x.Slug==slug);
+            }).AsNoTracking().FirstOrDefault(x=>x.Slug==slug);
             if(product==null)
                 return new ProductQueryModel();
             var inventory = inventories.FirstOrDefault(x => x.ProductId == product.Id);
@@ -190,6 +196,18 @@ namespace _01_LampshadeQuery.Query
             
 
             return product;
+        }
+
+        private static List<CommentQueryModel> MapComment(List<Comment> Comments)
+        {
+            return Comments.Select(x => new CommentQueryModel
+            {
+                Id = x.Id,
+               Name = x.Name,
+               Message = x.Message,
+               ProductId = x.ProductId,
+               IsConfirmed = x.IsConfirmed
+            }).OrderByDescending(x=>x.Id).ToList();
         }
 
         private static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> ProductPictureses)

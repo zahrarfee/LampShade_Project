@@ -1,4 +1,3 @@
-F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\obj\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\obj\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
 F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\obj\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.AssemblyInfoInputs.cache
 F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\obj\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.AssemblyInfo.cs
@@ -13,3 +12,4 @@ F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\obj\Deb
 F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\obj\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.pdb
 F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.dll
 F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\InventoryManagement.Application.Contract\obj\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.csproj.AssemblyReference.cache

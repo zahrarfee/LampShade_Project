@@ -32,22 +32,22 @@
 </div>
 
 <div class="page-content-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <!--=======  page wrapper  =======-->
-                <div class="page-wrapper">
-                    <div class="page-content-wrapper">
-                        <!--=======  single product main content area  =======-->
-                        <div class="single-product-main-content-area section-space" style="direction: ltr;">
-                            <div class="row" style="display: flex; flex-direction: row-reverse">
-                                <div class="col-lg-6">
-                                    <!--=======  product details slider area  =======-->
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<!--=======  page wrapper  =======-->
+<div class="page-wrapper">
+<div class="page-content-wrapper">
+<!--=======  single product main content area  =======-->
+<div class="single-product-main-content-area section-space" style="direction: ltr;">
+    <div class="row" style="display: flex; flex-direction: row-reverse">
+        <div class="col-lg-6">
+            <!--=======  product details slider area  =======-->
 
-                                    <div class="product-details-slider-area">
-                                        <div class="big-image-wrapper">
-                                            <div class="product-details-big-image-slider-wrapper product-details-big-image-slider-wrapper--bottom-space ht-slick-slider"
-                                                 data-slick-setting='{
+            <div class="product-details-slider-area">
+                <div class="big-image-wrapper">
+                    <div class="product-details-big-image-slider-wrapper product-details-big-image-slider-wrapper--bottom-space ht-slick-slider"
+                         data-slick-setting='{
             "slidesToShow": 1,
             "slidesToScroll": 1,
             "arrows": false,
@@ -65,27 +65,27 @@
             {"breakpoint":575, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} },
             {"breakpoint":479, "settings": {"slidesToShow": 1, "arrows": false, "slidesToScroll": 1} }
         ]'>
-                                            
-                                                    <div class="single-image">
-                                                        <img src="~/ProductPictures/@Model.ProductQuery.Picture" class="img-fluid"
-                                                             alt="@Model.ProductQuery.PictureAlt" title="@Model.ProductQuery.PictureTitle">
-                                                    </div>
-                                             
-                                                
-                                                @foreach (var picture in Model.ProductQuery.ProductPictures)
-                                            {
-                                                <div class="single-image">
-                                                    <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
-                                                         alt="@picture.PictureAlt" title="@picture.PictureTitle">
-                                                </div>
-                                            }
-                                               
-                                            </div>
-                                        </div>
+
+                        <div class="single-image">
+                            <img src="~/ProductPictures/@Model.ProductQuery.Picture" class="img-fluid"
+                                 alt="@Model.ProductQuery.PictureAlt" title="@Model.ProductQuery.PictureTitle">
+                        </div>
 
 
-                                        <div class="product-details-small-image-slider-wrapper product-details-small-image-slider-wrapper--horizontal-space ht-slick-slider"
-                                             data-slick-setting='{
+                        @foreach (var picture in Model.ProductQuery.ProductPictures)
+                        {
+                            <div class="single-image">
+                                <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
+                                     alt="@picture.PictureAlt" title="@picture.PictureTitle">
+                            </div>
+                        }
+
+                    </div>
+                </div>
+
+
+                <div class="product-details-small-image-slider-wrapper product-details-small-image-slider-wrapper--horizontal-space ht-slick-slider"
+                     data-slick-setting='{
         "slidesToShow": 4,
         "slidesToScroll": 1,
         "arrows": true,
@@ -105,326 +105,290 @@
         {"breakpoint":575, "settings": {"slidesToShow": 3, "arrows": false, "slidesToScroll": 1} },
         {"breakpoint":479, "settings": {"slidesToShow": 2, "arrows": false, "slidesToScroll": 1} }
     ]'>
-                                            <div class="single-image">
-                                                <img src="~/ProductPictures/@Model.ProductQuery.Picture" class="img-fluid"
-                                                     alt="@Model.ProductQuery.PictureAlt" title="@Model.ProductQuery.PictureTitle">
-                                            </div>
-                                             
-                                                
-                                            @foreach (var picture in Model.ProductQuery.ProductPictures)
-                                            {
-                                                <div class="single-image">
-                                                    <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
-                                                         alt="@picture.PictureAlt" title="@picture.PictureTitle">
-                                                </div>
-                                            }
-                                            
-                                        </div>
-                                    </div>
+                    <div class="single-image">
+                        <img src="~/ProductPictures/@Model.ProductQuery.Picture" class="img-fluid"
+                             alt="@Model.ProductQuery.PictureAlt" title="@Model.ProductQuery.PictureTitle">
+                    </div>
 
-                                    <!--=======  End of product details slider area  =======-->
-                                </div>
-                                <div class="col-lg-6">
-                                    <!--=======  single product content description  =======-->
-                                    <div class="single-product-content-description">
-                                        <p class="single-info">
-                                            گروه محصول <a asp-page="/ProductCategory" asp-route-id="@Model.ProductQuery.CategorySlug">@Model.ProductQuery.Category</a>
-                                        </p>
-                                        <h4 class="product-title">@Model.ProductQuery.Name</h4>
-                                        <div class="product-rating">
-                                            <span class="rating">
-                                                <i class="ion-android-star active"></i>
-                                                <i class="ion-android-star active"></i>
-                                                <i class="ion-android-star active"></i>
-                                                <i class="ion-android-star active"></i>
-                                                <i class="ion-android-star-outline"></i>
-                                            </span>
 
-                                            <span class="review-count">
-                                                <a href="#">(2 reviews)</a> | <a href="#">  نظر دهید</a>
-                                            </span>
-                                        </div>
+                    @foreach (var picture in Model.ProductQuery.ProductPictures)
+                    {
+                        <div class="single-image">
+                            <img src="~/ProductPictures/@picture.Picture" class="img-fluid"
+                                 alt="@picture.PictureAlt" title="@picture.PictureTitle">
+                        </div>
+                    }
 
-                                        <p class="single-grid-product__price" style="direction: rtl;">
-                                            @if (@Model.ProductQuery.HasDiscount)
-                                            {
-                                                <span class="discounted-price">@Model.ProductQuery.PriceWithDiscount تومان</span> <span class="main-price discounted">@Model.ProductQuery.Price تومان</span>
-                                            }
-                                            else
-                                            {
-                                                <span class="main-price ">@Model.ProductQuery.Price تومان</span>
-                                            }
+                </div>
+            </div>
 
-                                        </p>
+            <!--=======  End of product details slider area  =======-->
+        </div>
+        <div class="col-lg-6">
+            <!--=======  single product content description  =======-->
+            <div class="single-product-content-description">
+                <p class="single-info">
+                    گروه محصول <a asp-page="/ProductCategory" asp-route-id="@Model.ProductQuery.CategorySlug">@Model.ProductQuery.Category</a>
+                </p>
+                <h4 class="product-title">@Model.ProductQuery.Name</h4>
+                <div class="product-rating">
+                    <span class="rating">
+                        <i class="ion-android-star active"></i>
+                        <i class="ion-android-star active"></i>
+                        <i class="ion-android-star active"></i>
+                        <i class="ion-android-star active"></i>
+                        <i class="ion-android-star-outline"></i>
+                    </span>
 
-                                        <p class="single-info">کد محصول <span class="value">@Model.ProductQuery.Code</span> </p>
-                                        @*<p class="single-info">Reward Points: <span class="value">200</span> </p>*@
-                                        @*<p class="single-info">
+                    <span class="review-count">
+                        <a href="#">(2 reviews)</a> | <a href="#"> نظر دهید</a>
+                    </span>
+                </div>
+
+                <p class="single-grid-product__price" style="direction: rtl;">
+                    @if (@Model.ProductQuery.HasDiscount)
+                    {
+                        <span class="discounted-price">@Model.ProductQuery.PriceWithDiscount تومان</span>
+                        <span class="main-price discounted">@Model.ProductQuery.Price تومان</span>
+                    }
+                    else
+                    {
+                        <span class="main-price ">@Model.ProductQuery.Price تومان</span>
+                    }
+
+                </p>
+
+                <p class="single-info">کد محصول <span class="value">@Model.ProductQuery.Code</span> </p>
+                @*<p class="single-info">Reward Points: <span class="value">200</span> </p>*@
+                @*<p class="single-info">
             Availability: <span class="value">@Model.ProductQuery.</span>
         </p>*@
 
-                                        <p class="product-description">
-                                            @Model.ProductQuery.ShortDescription
-                                        </p>
-                                        @if (@Model.ProductQuery.HasDiscount)
-                                        {
-                                            <div class="product-countdown" data-countdown="@Model.ProductQuery.DiscountExpireDate"></div>
-
-                                        }
-
+                <p class="product-description">
+                    @Model.ProductQuery.ShortDescription
+                </p>
+                @if (@Model.ProductQuery.HasDiscount)
+                {
+                    <div class="product-countdown" data-countdown="@Model.ProductQuery.DiscountExpireDate"></div>
+                }
 
 
-                                        <div class="product-actions">
-                                            <div class="quantity-selection">
-                                                <label>تعداد</label>
-                                                <input type="number" value="1" min="1">
-                                            </div>
-
-                                            <div class="product-buttons">
-                                                <a class="cart-btn" href="#">
-                                                    <i class="ion-bag"></i>اضافه کردن به سبد خرید
-
-                                                </a>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="social-share-buttons mt-20">
-                                            <h5>انتشار این محصول</h5>
-                                            <ul>
-                                                <li>
-                                                    <a class="twitter" href="#">
-                                                        <i class="fa fa-twitter"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="facebook" href="#">
-                                                        <i class="fa fa-facebook"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="google-plus" href="#">
-                                                        <i class="fa fa-google-plus"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="pinterest" href="#">
-                                                        <i class="fa fa-pinterest"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <p class="single-info mb-0">
-                                            تگ ها: @Model.ProductQuery.Keywords
-                                        </p>
-
-
-                                    </div>
-                                    <!--=======  End of single product content description  =======-->
-                                </div>
-                            </div>
-                        </div>
-                        <!--=======  End of single product main content area  =======-->
-                        <!--=======  product description review   =======-->
-
-                        <div class="product-description-review-area">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--=======  product description review container  =======-->
-
-                                    <div class="tab-slider-wrapper product-description-review-container  section-space--inner">
-                                        <nav>
-                                            <div class="nav nav-tabs justify-content-center" id="nav-tab"
-                                                 role="tablist">
-                                                <a class="nav-item nav-link active" id="description-tab"
-                                                   data-toggle="tab" href="#product-description" role="tab"
-                                                   aria-selected="true">توضیحات</a>
-                                                <a class="nav-item nav-link" id="review-tab" data-toggle="tab"
-                                                   href="#review" role="tab" aria-selected="false"> نظرات</a>
-                                            </div>
-                                        </nav>
-                                        <div class="tab-content" id="nav-tabContent">
-                                            <div class="tab-pane fade show active" id="product-description"
-                                                 role="tabpanel" aria-labelledby="description-tab">
-                                                <!--=======  product description  =======-->
-
-                                                <div class="product-description">
-                                                    <p>
-                                                        @Model.ProductQuery.Description
-                                                    </p>
-                                                </div>
-
-                                                <!--=======  End of product description  =======-->
-                                            </div>
-                                            <div class="tab-pane fade" id="review" role="tabpanel"
-                                                 aria-labelledby="review-tab">
-                                                <!--=======  review content  =======-->
-
-                                                <div class="product-rating-wrap">
-                                                    <div class="pro-avg-rating">
-                                                        <h4>4.5 <span>(Overall)</span></h4>
-                                                        <span>Based on 9 Comments</span>
-                                                    </div>
-                                                    <div class="rating-list">
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <span>(5)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(3)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(1)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(0)</span>
-                                                        </div>
-                                                        <div class="sin-list float-right">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <i class="fa fa-star-o"></i>
-                                                            <span>(0)</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ratings-wrapper">
-
-                                                        <div class="sin-ratings">
-                                                            <div class="rating-author">
-                                                                <h3>Cristopher Lee</h3>
-                                                                <div class="rating-star">
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <span>(5)</span>
-                                                                </div>
-                                                            </div>
-                                                            <p>
-                                                                enim ipsam voluptatem quia voluptas sit
-                                                                aspernatur aut odit aut fugit, sed quia res eos
-                                                                qui ratione voluptatem sequi Neque porro
-                                                                quisquam est, qui dolorem ipsum quia dolor sit
-                                                                amet, consectetur, adipisci veli
-                                                            </p>
-                                                        </div>
-
-                                                        <div class="sin-ratings">
-                                                            <div class="rating-author">
-                                                                <h3>Rashed Mahmud</h3>
-                                                                <div class="rating-star">
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <span>(5)</span>
-                                                                </div>
-                                                            </div>
-                                                            <p>
-                                                                enim ipsam voluptatem quia voluptas sit
-                                                                aspernatur aut odit aut fugit, sed quia res eos
-                                                                qui ratione voluptatem sequi Neque porro
-                                                                quisquam est, qui dolorem ipsum quia dolor sit
-                                                                amet, consectetur, adipisci veli
-                                                            </p>
-                                                        </div>
-
-                                                        <div class="sin-ratings">
-                                                            <div class="rating-author">
-                                                                <h3>Hasan Mubarak</h3>
-                                                                <div class="rating-star">
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <i class="fa fa-star"></i>
-                                                                    <span>(5)</span>
-                                                                </div>
-                                                            </div>
-                                                            <p>
-                                                                enim ipsam voluptatem quia voluptas sit
-                                                                aspernatur aut odit aut fugit, sed quia res eos
-                                                                qui ratione voluptatem sequi Neque porro
-                                                                quisquam est, qui dolorem ipsum quia dolor sit
-                                                                amet, consectetur, adipisci veli
-                                                            </p>
-                                                        </div>
-
-                                                    </div>
-                                                    <div class="rating-form-wrapper fix">
-                                                        <h3>Add your Comments</h3>
-                                                        <form action="#">
-                                                            <div class="rating-form row">
-                                                                <div class="col-12 mb-15">
-                                                                    <h5>Rating:</h5>
-                                                                    <div class="rating-star fix">
-                                                                        <i class="fa fa-star-o"></i>
-                                                                        <i class="fa fa-star-o"></i>
-                                                                        <i class="fa fa-star-o"></i>
-                                                                        <i class="fa fa-star-o"></i>
-                                                                        <i class="fa fa-star-o"></i>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-6 col-12 form-group">
-                                                                    <label for="name">Name:</label>
-                                                                    <input id="name" placeholder="Name" type="text">
-                                                                </div>
-                                                                <div class="col-md-6 col-12 form-group">
-                                                                    <label for="email">Email:</label>
-                                                                    <input id="email" placeholder="Email"
-                                                                           type="text">
-                                                                </div>
-                                                                <div class="col-12 form-group">
-                                                                    <label for="your-review">Your Review:</label>
-                                                                    <textarea name="review" id="your-review"
-                                                                              placeholder="Write a review"></textarea>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <input value="add review" type="submit">
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-
-                                                <!--=======  End of review content  =======-->
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--=======  End of product description review container  =======-->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--=======  End of product description review   =======-->
-
+                <div class="product-actions">
+                    <div class="quantity-selection">
+                        <label>تعداد</label>
+                        <input type="number" value="1" min="1">
                     </div>
+
+                    <div class="product-buttons">
+                        <a class="cart-btn" href="#">
+                            <i class="ion-bag"></i>اضافه کردن به سبد خرید
+
+                        </a>
+                    </div>
+
                 </div>
-                <!--=======  End of page wrapper  =======-->
+
+                <div class="social-share-buttons mt-20">
+                    <h5>انتشار این محصول</h5>
+                    <ul>
+                        <li>
+                            <a class="twitter" href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="facebook" href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="google-plus" href="#">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="pinterest" href="#">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="single-info mb-0">
+                    تگ ها: @Model.ProductQuery.Keywords
+                </p>
+
+
             </div>
+            <!--=======  End of single product content description  =======-->
         </div>
     </div>
+</div>
+<!--=======  End of single product main content area  =======-->
+<!--=======  product description review   =======-->
+
+<div class="product-description-review-area">
+    <div class="row">
+        <div class="col-lg-12">
+            <!--=======  product description review container  =======-->
+
+            <div class="tab-slider-wrapper product-description-review-container  section-space--inner">
+                <nav>
+                    <div class="nav nav-tabs justify-content-center" id="nav-tab"
+                         role="tablist">
+                        <a class="nav-item nav-link active" id="description-tab"
+                           data-toggle="tab" href="#product-description" role="tab"
+                           aria-selected="true">
+                            توضیحات
+                        </a>
+                        <a class="nav-item nav-link" id="review-tab" data-toggle="tab"
+                           href="#review" role="tab" aria-selected="false">
+                            نظرات (@Model.ProductQuery.Comments.Count)
+                        </a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="product-description"
+                         role="tabpanel" aria-labelledby="description-tab">
+                        <!--=======  product description  =======-->
+
+                        <div class="product-description">
+                            <p>
+                                @Model.ProductQuery.Description
+                            </p>
+                        </div>
+
+                        <!--=======  End of product description  =======-->
+                    </div>
+                    <div class="tab-pane fade" id="review" role="tabpanel"
+                         aria-labelledby="review-tab">
+                        <!--=======  review content  =======-->
+
+                     
+                            @*<div class="rating-list">
+                                <div class="sin-list float-right">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <span>(5)</span>
+                                </div>
+                                <div class="sin-list float-right">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(3)</span>
+                                </div>
+                                <div class="sin-list float-right">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(1)</span>
+                                </div>
+                                <div class="sin-list float-right">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(0)</span>
+                                </div>
+                                <div class="sin-list float-right">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span>(0)</span>
+                                </div>
+                            </div>*@
+                            <div class="ratings-wrapper">
+                                @foreach (var comment in Model.ProductQuery.Comments)
+                                {
+                                    if (comment.IsConfirmed)
+                                    {
+                                        <div class="sin-ratings">
+                                            <div class="rating-author">
+                                                <h3> @comment.Name</h3>
+                                                @*<div class="rating-star">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <span>(5)</span>
+                                                </div>*@
+                                            </div>
+                                            <p>
+                                                @comment.Message
+                                            </p>
+                                        </div>
+
+                                    }
+                  
+                                }
+                                <div class="rating-form-wrapper fix">
+                                    <h3>نظر  دهید</h3>
+                                    <form method="post">
+                                        <div class="rating-form row">
+                                            @*<div class="col-12 mb-15">
+            <h5>Rating:</h5>
+            <div class="rating-star fix">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>*@
+                                            @*<input type="hidden" value="@Model.ProductQuery.Id" name="ProductId" />*@
+                                            <input type="hidden" value="@Model.ProductQuery.Slug" name="productSlug" />
+                                            <div class="col-md-6 col-12 form-group">
+                                                <label for="name">نام:</label>
+                                                <input id="name" name="name" type="text" placeholder="مثال: علی حسینی">
+                                            </div>
+                                            <div class="col-md-6 col-12 form-group">
+                                                <label for="email">ایمیل:</label>
+                                                <input name="email" type="text" placeholder="مثال:ali@gmail.com">
+                                            </div>
+                                            <div class="col-12 form-group">
+                                                <label for="message">متن:</label>
+                                                <textarea name="message" id="message" placeholder="نظر خود را بنویسید"></textarea>
+                                            </div>
+                                            <div class="col-12">
+                                                <input value="ثبت نظر" type="submit">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+
+                              
+
+                            </div>
+
+                        </div>
+
+                        <!--=======  End of review content  =======-->
+                    </div>
+                </div>
+            </div>
+
+            <!--=======  End of product description review container  =======-->
+        </div>
+    </div>
+</div>
+
+<!--=======  End of product description review   =======-->
+
+</div>
+</div>
+<!--=======  End of page wrapper  =======-->
+</div>
+</div>
+</div>
 </div>
