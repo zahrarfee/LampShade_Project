@@ -14,6 +14,8 @@ namespace BlogManagement.Application.Contracts.ArticleCategory
         EditArticleCategory GetDetails(long id);
 
         List<ArticleCategoryViewModel> GetCategories();
+
+        OperationResult Delete(EditArticleCategory command);
         //string GetCategorySlugBy(long id);
     }
 }

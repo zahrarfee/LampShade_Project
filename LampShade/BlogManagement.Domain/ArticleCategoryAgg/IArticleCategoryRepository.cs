@@ -12,5 +12,6 @@ namespace BlogManagement.Domain.ArticleCategoryAgg
         List<ArticleCategoryViewModel> Search(ArticleCategorySearchModel searchModel);
         string GetCategorySlugBy(long id);
         List<ArticleCategoryViewModel> GetCategories();
+        void Delete(long id);
     }
 }

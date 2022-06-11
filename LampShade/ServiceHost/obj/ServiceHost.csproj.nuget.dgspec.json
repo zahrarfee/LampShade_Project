@@ -36,6 +36,9 @@
               "F:\\Practice\\LampShade\\LampShade\\0_Framework\\0_Framework.csproj": {
                 "projectPath": "F:\\Practice\\LampShade\\LampShade\\0_Framework\\0_Framework.csproj"
               },
+              "F:\\Practice\\LampShade\\LampShade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
+                "projectPath": "F:\\Practice\\LampShade\\LampShade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
+              },
               "F:\\Practice\\LampShade\\LampShade\\DiscountManagement.Infrastracture.EFCore\\DiscountManagement.Infrastracture.EFCore.csproj": {
                 "projectPath": "F:\\Practice\\LampShade\\LampShade\\DiscountManagement.Infrastracture.EFCore\\DiscountManagement.Infrastracture.EFCore.csproj"
               },
@@ -313,6 +316,9 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
+              "F:\\Practice\\LampShade\\LampShade\\01_LampshadeQuery\\01_LampshadeQuery.csproj": {
+                "projectPath": "F:\\Practice\\LampShade\\LampShade\\01_LampshadeQuery\\01_LampshadeQuery.csproj"
+              },
               "F:\\Practice\\LampShade\\LampShade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj": {
                 "projectPath": "F:\\Practice\\LampShade\\LampShade\\BlogManagement.Infrastructure.EFCore\\BlogManagement.Infrastructure.EFCore.csproj"
               },

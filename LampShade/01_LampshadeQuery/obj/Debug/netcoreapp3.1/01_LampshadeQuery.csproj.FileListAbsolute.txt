@@ -29,3 +29,9 @@ F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\Discou
 F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\DiscountManagement.Domain.pdb
 F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\InventoryManagement.Application.Contract.pdb
 F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\InventoryManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\BlogManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\BlogManagement.Domain.dll
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\BlogManagement.Infrastructure.EFCore.dll
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\BlogManagement.Infrastructure.EFCore.pdb
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\BlogManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\BlogManagement.Domain.pdb

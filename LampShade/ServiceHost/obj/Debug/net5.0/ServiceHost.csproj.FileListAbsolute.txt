@@ -242,3 +242,7 @@ F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Adminis
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Articles\Delete.cshtml.g.cs
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Articles\Edit.cshtml.g.cs
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\Articles\Index.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Shared\Components\Article\Default.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Article.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Blog\ArticleCategories\Delete.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\ArticleCategory.cshtml.g.cs

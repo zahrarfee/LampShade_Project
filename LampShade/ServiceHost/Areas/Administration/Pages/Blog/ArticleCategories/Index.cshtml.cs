@@ -49,5 +49,17 @@ namespace ServiceHost.Areas.Administration.Pages.Blog.ArticleCategories
             var category = _articleCategory.Edit(command);
             return new JsonResult(category);
         }
+
+        public IActionResult OnGetDelete(long id)
+        {
+            var category = _articleCategory.GetDetails(id);
+            return Partial("Delete",category);
+        }
+
+        public JsonResult OnPostDelete(EditArticleCategory command)
+        {
+            var result = _articleCategory.Delete(command);
+            return new JsonResult(result);
+        }
     }
 }

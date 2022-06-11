@@ -32,11 +32,23 @@ namespace _0_Framework.Application
             var pc = new PersianCalendar();
             return $"{pc.GetYear(date)}/{pc.GetMonth(date):00}/{pc.GetDayOfMonth(date):00}";
         }
-        
+        //public static string ToFarsiYear(this DateTime date)
+        //{
+        //    if (date == new DateTime()) return "";
+        //    var pc = new PersianCalendar();
+        //    return $"{pc.GetYear(date)}";
+        //}
+        //public static string ToFarsiDayMonth(this DateTime date)
+        //{
+        //    if (date == new DateTime()) return "";
+        //    var pc = new PersianCalendar();
+        //    return $"{pc.GetMonth(date)}/{pc.GetDayOfMonth(date)}";
+        //}
+
         public static string ToDiscountFormat(this DateTime date)
         {
             if (date == new DateTime()) return "";
-            return $"{date.Year}/{date.Month}/{date.Day}";
+            return $"{date.Year}/{date.Month:00}/{date.Day:00}";
         }
 
         public static string GetTime(this DateTime date)

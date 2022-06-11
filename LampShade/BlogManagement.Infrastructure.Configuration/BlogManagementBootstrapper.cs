@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using _01_LampshadeQuery.Contracts.Article;
+using _01_LampshadeQuery.Contracts.ArticleCategory;
+using _01_LampshadeQuery.Query;
 using BlogManagement.Application;
 using BlogManagement.Application.Contracts.Article;
 using BlogManagement.Application.Contracts.ArticleCategory;
@@ -22,6 +25,9 @@ namespace BlogManagement.Infrastructure.Configuration
 
             services.AddTransient<IArticleRepository, ArticleRepository>();
             services.AddTransient<IArticleApplication, ArticleApplication>();
+
+            services.AddTransient<IArticleQuery, ArticleQuery>();
+            services.AddTransient<IArticleCategoryQuery, ArticleCategoryQuery>();
 
 
 

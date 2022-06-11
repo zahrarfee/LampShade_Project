@@ -71,9 +71,20 @@ namespace BlogManagement.Application
                 return _articleCategoryRepository.GetCategories();
             }
 
-            //public string GetCategorySlugBy(long id)
-            //{
-            //    throw new NotImplementedException();
-            //}
+            public OperationResult Delete(EditArticleCategory command)
+            {
+                var operationResult =new OperationResult();
+                var category = _articleCategoryRepository.Get(command.Id);
+                if(category==null)
+                    return operationResult.Failed(ApplicationMessage.RecordNotFound);
+                _articleCategoryRepository.Delete(command.Id);
+                _articleCategoryRepository.SaveChange();
+                return operationResult.Succeced();
+            }
+
+        //public string GetCategorySlugBy(long id)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

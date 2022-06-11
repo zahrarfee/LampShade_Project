@@ -3158,6 +3158,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "0_Framework": "1.0.0",
+          "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "DiscountManagement.Infrastracture.EFCore": "1.0.0",
           "InventoryManagement.Infrastracture.EFCore": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
@@ -3230,6 +3231,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
           "BlogManagement.Application": "1.0.0",
           "BlogManagement.Infrastructure.EFCore": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
