@@ -1,0 +1,15 @@
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\obj\Debug\netcoreapp3.1\CommentManagement.Domain.csproj.AssemblyReference.cache
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\obj\Debug\netcoreapp3.1\CommentManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\obj\Debug\netcoreapp3.1\CommentManagement.Domain.AssemblyInfoInputs.cache
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\obj\Debug\netcoreapp3.1\CommentManagement.Domain.AssemblyInfo.cs
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\obj\Debug\netcoreapp3.1\CommentManagement.Domain.csproj.CoreCompileInputs.cache
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\bin\Debug\netcoreapp3.1\CommentManagement.Domain.deps.json
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\bin\Debug\netcoreapp3.1\CommentManagement.Domain.dll
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\bin\Debug\netcoreapp3.1\CommentManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\bin\Debug\netcoreapp3.1\0_Framework.dll
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\bin\Debug\netcoreapp3.1\CommentManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\bin\Debug\netcoreapp3.1\0_Framework.pdb
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\bin\Debug\netcoreapp3.1\CommentManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\obj\Debug\netcoreapp3.1\CommentManagement.Domain.csproj.CopyComplete
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\obj\Debug\netcoreapp3.1\CommentManagement.Domain.dll
+F:\Practice\LampShade\LampShade\CommentManagement.Domain\obj\Debug\netcoreapp3.1\CommentManagement.Domain.pdb

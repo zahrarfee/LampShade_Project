@@ -1,18 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using _0_Framework.Application;
 using _01_LampshadeQuery.Contracts.Comment;
 using _01_LampshadeQuery.Contracts.Product;
-using _01_LampshadeQuery.Contracts.ProductCategory;
 using _01_LampshadeQuery.Contracts.ProductPicture;
+using CommentManagement.Infrastructure.EFCore;
 using DiscountManagement.Infrastracture.EFCore;
 using InventoryManagement.Infrastracture.EFCore;
 using Microsoft.EntityFrameworkCore;
-using ShopManagement.Application.Contracts.Product;
-using ShopManagement.Domain.CommentAgg;
-using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Infrastructure.EFCore;
 
@@ -20,15 +16,17 @@ namespace _01_LampshadeQuery.Query
 {
     public class ProductQuery:IProductQuery
     {
+        private readonly CommentContext _commentContext;
         private readonly ShopContext _shopContext;
         private readonly InventoryContext _inventoryContext;
         private readonly DiscountContext _discountContext;
 
-        public ProductQuery(ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext)
+        public ProductQuery(ShopContext shopContext, InventoryContext inventoryContext, DiscountContext discountContext, CommentContext commentContext)
         {
             _shopContext = shopContext;
             _inventoryContext = inventoryContext;
             _discountContext = discountContext;
+            _commentContext = commentContext;
         }
 
         //public ProductQueryModel GetDetails(string slug)
@@ -140,11 +138,12 @@ namespace _01_LampshadeQuery.Query
 
         public ProductQueryModel GetProductWithPictures(string slug)
         {
+           
             var discounts  = _discountContext.CustomerDiscounts.Where(x => x.StartDate < DateTime.Now && x.EndDate > DateTime.Now).Select(x => new {x.ProductId, x.DiscountRate,x.EndDate}).ToList();
             var inventories = _inventoryContext.Inventories.Select(x => new {x.ProductId, x.UnitPrice}).ToList();
             var product = _shopContext.Products
                 .Include(x=>x.Category)
-                .Include(x=>x.Comments)
+               
                 .Include(x=>x.ProductPictureses)                
                 .Select(x => new ProductQueryModel
             {
@@ -161,8 +160,8 @@ namespace _01_LampshadeQuery.Query
                 CategorySlug = x.Category.Slug,
                 Keywords = x.Keywords,
                 MetaDescription = x.MetaDescription,
-                    ProductPictures = MapProductPicture(x.ProductPictureses),
-                    Comments = MapComment(x.Comments)
+                    ProductPictures = MapProductPicture(x.ProductPictureses)
+                    
 
             }).AsNoTracking().FirstOrDefault(x=>x.Slug==slug);
             if(product==null)
@@ -192,23 +191,31 @@ namespace _01_LampshadeQuery.Query
 
             }
 
-            
-            
+            product.Comments = _commentContext.Comments
+                .Where(x => x.Type==CommentTypes.Product)
+                .Where(x => x.OwnerRecordId == product.Id)
+                .Where(x => x.IsConfirmed == true)
+                .Select(x => new CommentQueryModel
+                {
+                    Id = x.Id,
+                    Message = x.Message,
+                    Name = x.Name
 
+                }).OrderByDescending(x => x.Id).ToList();
             return product;
         }
 
-        private static List<CommentQueryModel> MapComment(List<Comment> Comments)
-        {
-            return Comments.Select(x => new CommentQueryModel
-            {
-                Id = x.Id,
-               Name = x.Name,
-               Message = x.Message,
-               ProductId = x.ProductId,
-               IsConfirmed = x.IsConfirmed
-            }).OrderByDescending(x=>x.Id).ToList();
-        }
+        //private static List<CommentQueryModel> MapComment(List<Comment> Comments)
+        //{
+        //    return Comments.Select(x => new CommentQueryModel
+        //    {
+        //        Id = x.Id,
+        //       Name = x.Name,
+        //       Message = x.Message,
+        //       ProductId = x.ProductId,
+        //       IsConfirmed = x.IsConfirmed
+        //    }).OrderByDescending(x=>x.Id).ToList();
+        //}
 
         private static List<ProductPictureQueryModel> MapProductPicture(List<ProductPicture> ProductPictureses)
         {

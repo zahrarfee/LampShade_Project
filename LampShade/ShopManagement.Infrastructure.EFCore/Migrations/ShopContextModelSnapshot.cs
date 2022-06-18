@@ -4,9 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using CommentManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore;
 
-namespace ShopManagement.Infrastructure.EFCore.Migrations
+namespace CommentManagement.Infrastructure.EFCore.Migrations
 {
     [DbContext(typeof(ShopContext))]
     partial class ShopContextModelSnapshot : ModelSnapshot

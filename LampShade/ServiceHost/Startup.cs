@@ -7,12 +7,15 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 using _0_Framework.Application;
 using BlogManagement.Infrastructure.Configuration;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastracture.Configuration;
 using ShopManagement.Configuration;
+using CommentManagement.Infrastructure.Configuration;
 
 namespace ServiceHost
 {
@@ -33,8 +36,14 @@ namespace ServiceHost
             DiscountManagementBootstrapper.Configure(services,connectionString);
             InventoryBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services,connectionString);
+            CommentManagementBootstrapper.Configure(services,connectionString);
+
+
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddRazorPages();
+
+            //baraye seo
+            services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

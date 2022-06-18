@@ -9,7 +9,6 @@ F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\n
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\ShopManagement.Domain.pdb
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\0_Framework.pdb
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.pdb
-F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.GeneratedMSBuildEditorConfig.editorconfig
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.AssemblyInfoInputs.cache
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.AssemblyInfo.cs
@@ -18,3 +17,4 @@ F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\n
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.dll
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.pdb
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.genruntimeconfig.cache
+F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache

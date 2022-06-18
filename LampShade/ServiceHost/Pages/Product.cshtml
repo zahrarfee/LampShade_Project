@@ -1,7 +1,9 @@
 ﻿@page "{id}"
 @model ServiceHost.Pages.ProductModel
 @{
-    ViewData["Title"] = "محصول";
+    ViewData["Title"] = Model.ProductQuery.Name;
+    ViewData["keywords"] = Model.ProductQuery.Keywords;
+    ViewData["metaDescription"] = Model.ProductQuery.MetaDescription;
 }
 
 <div class="breadcrumb-area section-space--half">
@@ -130,7 +132,7 @@
                 <p class="single-info">
                     گروه محصول <a asp-page="/ProductCategory" asp-route-id="@Model.ProductQuery.CategorySlug">@Model.ProductQuery.Category</a>
                 </p>
-                <h4 class="product-title">@Model.ProductQuery.Name</h4>
+                <h2 class="product-title">@Model.ProductQuery.Name</h2>
                 <div class="product-rating">
                     <span class="rating">
                         <i class="ion-android-star active"></i>
@@ -141,7 +143,7 @@
                     </span>
 
                     <span class="review-count">
-                        <a href="#">(2 reviews)</a> | <a href="#"> نظر دهید</a>
+                        <a href="#">(2 نظر)</a> | <a href="#"> نظر دهید</a>
                     </span>
                 </div>
 
@@ -263,54 +265,14 @@
                          aria-labelledby="review-tab">
                         <!--=======  review content  =======-->
 
+                        <div class="product-rating-wrap">
                      
-                            @*<div class="rating-list">
-                                <div class="sin-list float-right">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <span>(5)</span>
-                                </div>
-                                <div class="sin-list float-right">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <span>(3)</span>
-                                </div>
-                                <div class="sin-list float-right">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <span>(1)</span>
-                                </div>
-                                <div class="sin-list float-right">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <span>(0)</span>
-                                </div>
-                                <div class="sin-list float-right">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <span>(0)</span>
-                                </div>
-                            </div>*@
-                            <div class="ratings-wrapper">
-                                @foreach (var comment in Model.ProductQuery.Comments)
-                                {
-                                    if (comment.IsConfirmed)
-                                    {
+                            @foreach (var comment in Model.ProductQuery.Comments)
+                            {
+                                //if (comment.IsConfirmed==true)
+                                //{
+                                    <div class="ratings-wrapper">
+                             
                                         <div class="sin-ratings">
                                             <div class="rating-author">
                                                 <h3> @comment.Name</h3>
@@ -327,15 +289,16 @@
                                                 @comment.Message
                                             </p>
                                         </div>
+                                    </div>
 
-                                    }
+                                @*}*@
                   
-                                }
-                                <div class="rating-form-wrapper fix">
-                                    <h3>نظر  دهید</h3>
-                                    <form method="post">
-                                        <div class="rating-form row">
-                                            @*<div class="col-12 mb-15">
+                            }
+                            <div class="rating-form-wrapper fix">
+                                <h3>نظر  دهید</h3>
+                                <form method="post">
+                                    <div class="rating-form row">
+                                        @*<div class="col-12 mb-15">
             <h5>Rating:</h5>
             <div class="rating-star fix">
                 <i class="fa fa-star-o"></i>
@@ -345,27 +308,27 @@
                 <i class="fa fa-star-o"></i>
             </div>
         </div>*@
-                                            @*<input type="hidden" value="@Model.ProductQuery.Id" name="ProductId" />*@
-                                            <input type="hidden" value="@Model.ProductQuery.Slug" name="productSlug" />
-                                            <div class="col-md-6 col-12 form-group">
-                                                <label for="name">نام:</label>
-                                                <input id="name" name="name" type="text" placeholder="مثال: علی حسینی">
-                                            </div>
-                                            <div class="col-md-6 col-12 form-group">
-                                                <label for="email">ایمیل:</label>
-                                                <input name="email" type="text" placeholder="مثال:ali@gmail.com">
-                                            </div>
-                                            <div class="col-12 form-group">
-                                                <label for="message">متن:</label>
-                                                <textarea name="message" id="message" placeholder="نظر خود را بنویسید"></textarea>
-                                            </div>
-                                            <div class="col-12">
-                                                <input value="ثبت نظر" type="submit">
-                                            </div>
+                                        <input type="hidden" value="@Model.ProductQuery.Id" name="ownerRecordId" />
+                                        <input type="hidden" value="@Model.ProductQuery.Slug" name="productSlug" />
+                                        <div class="col-md-6 col-12 form-group">
+                                            <label for="name">نام:</label>
+                                            <input id="name" name="name" type="text" placeholder="مثال: علی حسینی">
                                         </div>
-                                    </form>
-                                </div>
-
+                                        <div class="col-md-6 col-12 form-group">
+                                            <label for="email">ایمیل:</label>
+                                            <input name="email" type="text" placeholder="مثال:ali@gmail.com">
+                                        </div>
+                                        <div class="col-12 form-group">
+                                            <label for="message">متن:</label>
+                                            <textarea name="message" id="message" placeholder="نظر خود را بنویسید"></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <input value="ثبت نظر" type="submit">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
 
                               
 
@@ -390,4 +353,4 @@
 <!--=======  End of page wrapper  =======-->
 </div>
 </div>
-</div>
+

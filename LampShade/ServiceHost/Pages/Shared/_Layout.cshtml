@@ -4,7 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] | فروشگاه سروش</title>
+
+
+    @if (ViewData["Title"] != null)
+    {
+        <title>@ViewData["Title"] | فروشگاه سروش</title>
+    }
+    else
+    {
+        <title>فروشگاه سروش</title>
+    }
+    <meta name="keywords" content="@ViewData["keywords"]" />
+    <meta name="description" content="@ViewData["metaDescription"]" />
 
     <!-- Vendor CSS -->
     <link href="~/Theme/assets/css/vendors.css" rel="stylesheet">
@@ -15,54 +26,52 @@
 
     <!--   my codes       -->
 
- 
 
 </head>
 
 <body>
 <!--====================  header area ====================-->
-@await  Component.InvokeAsync("Menu")
+@await Component.InvokeAsync("Menu")
 
 <!--====================  End of header area  ====================-->
 
-    @RenderBody()
+@RenderBody()
 
-    <!--====================  footer area ====================-->
-   @await Component.InvokeAsync("Footer")
-    <!--====================  End of footer area  ====================-->
+<!--====================  footer area ====================-->
+@await Component.InvokeAsync("Footer")
+<!--====================  End of footer area  ====================-->
 
-   
 
-    <div class="search-overlay" id="search-overlay">
-        <a href="javascript:void(0)" class="close-search-overlay" id="close-search-overlay">
-            <i class="ion-ios-close-empty"></i>
-        </a>
+<div class="search-overlay" id="search-overlay">
+    <a href="javascript:void(0)" class="close-search-overlay" id="close-search-overlay">
+        <i class="ion-ios-close-empty"></i>
+    </a>
 
-        <!--=======  search form  =======-->
+    <!--=======  search form  =======-->
 
-        <div class="search-form">
-            <form method="get" asp-page="/Search">
-                <input type="search" name="value" id="value" placeholder="جستجو کنید ...">
-                <button type="submit">
-                    <i class="ion-android-search"></i>
-                </button>
-            </form>
-        </div>
-
-        <!--=======  End of search form  =======-->
+    <div class="search-form">
+        <form method="get" asp-page="/Search">
+            <input type="search" name="value" id="value" placeholder="جستجو کنید ...">
+            <button type="submit">
+                <i class="ion-android-search"></i>
+            </button>
+        </form>
     </div>
 
+    <!--=======  End of search form  =======-->
+</div>
 
-    <!-- scroll to top  -->
-    <div id="scroll-top">
-        <span>بازگشت به بالا</span><i class="ion-chevron-right"></i><i class="ion-chevron-right"></i>
-    </div>
-    <!-- end of scroll to top -->
-    <!-- Vendor JS -->
-    <script src="~/Theme/assets/js/vendors.js"></script>
 
-    <!-- Active JS -->
-    <script src="~/Theme/assets/js/active.js"></script>
+<!-- scroll to top  -->
+<div id="scroll-top">
+    <span>بازگشت به بالا</span><i class="ion-chevron-right"></i><i class="ion-chevron-right"></i>
+</div>
+<!-- end of scroll to top -->
+<!-- Vendor JS -->
+<script src="~/Theme/assets/js/vendors.js"></script>
+
+<!-- Active JS -->
+<script src="~/Theme/assets/js/active.js"></script>
 
 <script src="~/slide/dist/slider-x.js"></script>
 </body>
