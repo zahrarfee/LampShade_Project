@@ -141,7 +141,7 @@
         <!--=======  single comment  =======-->
         @foreach (var comment in @Model.Article.Comments)
         {
-            <div class="single-comment">
+            <div class="single-comment" id="comment-@comment.Id">
                 <span class="reply-btn">
                     <a href="#postComment" onclick='$("#commentParentId").val(@comment.Id)'>پاسخ</a>
                 </span>
@@ -153,16 +153,26 @@
                     <h3 class="user">
                         @comment.Name
                         <span class="comment-time">
-              @comment.CreationDate
-            </span>
+                            @comment.CreationDate
+                        </span>
                     </h3>
-                    <h3 class="user">
-                        @comment.Website
-                        @*<span class="comment-time">
-                April 28, 2019
-                at 3:09 am
-            </span>*@
-                    </h3>
+
+                    @if (@comment.ParentId > 0)
+                    {
+
+                    <div class="user">
+
+                        <span>در پاسخ به: </span> <a href="#comment-@comment.ParentId">@comment.Parent</a>
+                    </div>
+                 
+          
+
+
+
+
+
+                        
+                    }
                     <p class="comment-text">
                         @comment.Message
                     </p>

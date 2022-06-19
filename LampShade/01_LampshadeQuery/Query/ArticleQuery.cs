@@ -66,10 +66,11 @@ namespace _01_LampshadeQuery.Query
                 }).FirstOrDefault(x => x.Slug == slug);
             if (!string.IsNullOrWhiteSpace(article.Keywords))
                 article.KeywordsList = article.Keywords.Split(",").ToList();
-            article.Comments = _commentContext.Comments
+            var comments = _commentContext.Comments
                 .Where(x => x.Type == CommentTypes.Article)
                 .Where(x => x.OwnerRecordId == article.Id)
                 .Where(x => x.IsConfirmed == true)
+                
                 .Select(x => new CommentQueryModel
                 {
                     Id = x.Id,
@@ -77,9 +78,16 @@ namespace _01_LampshadeQuery.Query
                     Name = x.Name,
                     Website = x.Website,
                     Email = x.Email,
+                    ParentId = x.ParentId,
                     CreationDate = x.CreationDate.ToFarsi()
                 }).OrderByDescending(x => x.Id).ToList();
-                
+            foreach (var item in comments)
+            {
+                if (item.ParentId > 0)
+                    item.Parent = comments.FirstOrDefault(x => x.Id == item.ParentId)?.Name;
+            }
+
+            article.Comments = comments;    
             return article;
         }
     }

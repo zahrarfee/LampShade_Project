@@ -12,6 +12,8 @@ namespace _01_LampshadeQuery.Contracts.Comment
         public string Email { get; set; }
         public string Website { get; set; }
         public string CreationDate { get; set; }
+        public long ParentId { get; set; }
+        public string Parent { get; set; }
         public bool IsConfirmed { get; set; }
     }
 }
