@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using InventoryManagement.Application.Contract.Inventory;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -10,8 +11,10 @@ using ShopManagement.Application.Contracts.Product;
 
 namespace ServiceHost.Areas.Administration.Pages.Inventory
 {
+    [Authorize(Roles = _0_Framework.Infrastracture.Roles.Administration)]
     public class IndexModel : PageModel
     {
+
         public SelectList Products;
         public InventorySearchModel SearchModel;
         public List<InventoryViewModel> Inventories;

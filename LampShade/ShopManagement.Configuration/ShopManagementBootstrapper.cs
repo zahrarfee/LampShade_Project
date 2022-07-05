@@ -13,7 +13,7 @@ using ShopManagement.Application.Contracts.Product;
 using ShopManagement.Application.Contracts.ProductCategory;
 using ShopManagement.Application.Contracts.ProductPicture;
 using ShopManagement.Application.Contracts.Slide;
-
+using ShopManagement.Configuration.Permissions;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
@@ -47,6 +47,9 @@ namespace ShopManagement.Configuration
 
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();
+
+
+            services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
 
 
             services.AddDbContext<ShopContext>(x => x.UseSqlServer(connectionString));

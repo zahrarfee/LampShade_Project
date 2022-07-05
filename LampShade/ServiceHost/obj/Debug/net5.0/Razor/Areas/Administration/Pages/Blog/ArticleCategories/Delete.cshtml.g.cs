@@ -20,7 +20,7 @@ using ServiceHost;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"174d67d71695ae68957b4a5ad454f83d7845888e", @"/Areas/Administration/Pages/Blog/ArticleCategories/Delete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"96598fc2927794712db529b735ff42e5d3a5fa9a", @"/Areas/Administration/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"017e7b82f93da93e475c4b977fb8d8c18cf84a07", @"/Areas/Administration/Pages/_ViewImports.cshtml")]
     public class Areas_Administration_Pages_Blog_ArticleCategories_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<BlogManagement.Application.Contracts.ArticleCategory.EditArticleCategory>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", "hidden", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

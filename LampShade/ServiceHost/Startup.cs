@@ -11,11 +11,15 @@ using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using System.Threading.Tasks;
 using _0_Framework.Application;
+using _0_Framework.Infrastracture;
+using AccountManagement.Infrastructure.Configuration;
 using BlogManagement.Infrastructure.Configuration;
 using DiscountManagement.Configuration;
 using InventoryManagement.Infrastracture.Configuration;
 using ShopManagement.Configuration;
 using CommentManagement.Infrastructure.Configuration;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 
 namespace ServiceHost
 {
@@ -37,10 +41,54 @@ namespace ServiceHost
             InventoryBootstrapper.Configure(services, connectionString);
             BlogManagementBootstrapper.Configure(services,connectionString);
             CommentManagementBootstrapper.Configure(services,connectionString);
-
-
+            AccountManagementBootstrapper.Configure(services,connectionString);
+            services.AddHttpContextAccessor();  //for authorise
+            services.AddSingleton<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IFileUploader, FileUploader>();
-            services.AddRazorPages();
+            services.AddTransient<IAuthHelper, AuthHelper>();
+            
+            //start authentication
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.Lax;
+            });
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, o =>
+                {
+                    o.LoginPath = new PathString("/Account");
+                    o.LogoutPath = new PathString("/Account");
+                    o.AccessDeniedPath = new PathString("/AccessDenied");
+                });
+
+            //end authentication
+
+
+            //start Authorization
+
+            services.AddAuthorization(option =>
+            {
+                option.AddPolicy("AdminArea"
+                    , builder => builder.RequireRole(new List<string> {Roles.Administration, Roles.Blogger}));
+
+                option.AddPolicy("Shop"
+                    , builder => builder.RequireRole(new List<string> { Roles.Administration }));
+                option.AddPolicy("Discount"
+                    , builder => builder.RequireRole(new List<string> { Roles.Administration }));
+            });
+
+            services.AddRazorPages()
+                .AddMvcOptions(options=>options.Filters.Add<SecurityPageFilter>())
+                .AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
+                options.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
+                options.Conventions.AuthorizeAreaFolder("Administration", "/Discount", "Discount");
+
+            });
+                
+            //end Authorization
 
             //baraye seo
             services.AddSingleton(HtmlEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Arabic));
@@ -59,14 +107,12 @@ namespace ServiceHost
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-
+            app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseCookiePolicy();
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();

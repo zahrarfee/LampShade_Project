@@ -1,4 +1,3 @@
-F:\Practice\LampShade\LampShade\CommentManagement.Application\obj\Debug\netcoreapp3.1\CommentManagement.Application.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\CommentManagement.Application\obj\Debug\netcoreapp3.1\CommentManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 F:\Practice\LampShade\LampShade\CommentManagement.Application\obj\Debug\netcoreapp3.1\CommentManagement.Application.AssemblyInfoInputs.cache
 F:\Practice\LampShade\LampShade\CommentManagement.Application\obj\Debug\netcoreapp3.1\CommentManagement.Application.AssemblyInfo.cs
@@ -15,3 +14,4 @@ F:\Practice\LampShade\LampShade\CommentManagement.Application\bin\Debug\netcorea
 F:\Practice\LampShade\LampShade\CommentManagement.Application\obj\Debug\netcoreapp3.1\CommentManagement.Application.csproj.CopyComplete
 F:\Practice\LampShade\LampShade\CommentManagement.Application\obj\Debug\netcoreapp3.1\CommentManagement.Application.dll
 F:\Practice\LampShade\LampShade\CommentManagement.Application\obj\Debug\netcoreapp3.1\CommentManagement.Application.pdb
+F:\Practice\LampShade\LampShade\CommentManagement.Application\obj\Debug\netcoreapp3.1\CommentManagement.Application.csproj.AssemblyReference.cache
