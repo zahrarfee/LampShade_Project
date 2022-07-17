@@ -1,4 +1,4 @@
-﻿@font-face {
+﻿/*@font-face {
     font-family: 'IranSans';
     src: url('../fonts/IranianSans.eot'), 
          url('../fonts/IranianSans.eot') format('embedded-opentype'),
@@ -7,13 +7,23 @@
          url('../fonts/IranianSans.svg') format('svg');
     font-weight: normal;
     font-style: normal;
+}*/
+@font-face {
+    font-family: 'IRANYekan';
+    src: url('../fonts/IRANYekanRegular.eot'),
+         url('../fonts/IRANYekanRegular.eot') format('embedded-opentype'), 
+         url('../fonts/IRANYekanRegular.woff') format('woff'), 
+         url('../fonts/IRANYekanRegular.ttf') format('truetype'),
+         url('../fonts/IRANYekanRegular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
 body {
     direction: rtl;
     text-align: right;
-    font-family: 'IranSans'
+    font-family: 'IRANYekan'
 }
 
 .hero-slider-content { text-align: right; }

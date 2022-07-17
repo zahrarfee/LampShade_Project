@@ -178,12 +178,12 @@
                 <div class="product-actions">
                     <div class="quantity-selection">
                         <label>تعداد</label>
-                        <input type="number" value="1" min="1">
+                        <input type="number" value="1" min="1" id="productCount">
                     </div>
 
                     <div class="product-buttons">
-                        <a class="cart-btn" href="#">
-                            <i class="ion-bag"></i>اضافه کردن به سبد خرید
+                        <a class="cart-btn" onclick="addToCart('@Model.ProductQuery.Id' , '@Model.ProductQuery.Name' , '@Model.ProductQuery.DoubledPrice' , '@Model.ProductQuery.Picture' , '@Model.ProductQuery.DiscountRate')">
+                            <i class="ion-bag"></i>افزودن به سبد خرید
 
                         </a>
                     </div>

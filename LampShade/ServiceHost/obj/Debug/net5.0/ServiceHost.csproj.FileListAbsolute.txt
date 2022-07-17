@@ -275,3 +275,7 @@ F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Adminis
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Role\Index.cshtml.g.cs
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Account.cshtml.g.cs
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\AccessDenied.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\Cart.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\Microsoft.Extensions.PlatformAbstractions.dll
+F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\Nancy.dll
+F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Pages\CheckOut.cshtml.g.cs

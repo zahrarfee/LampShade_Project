@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ShopManagement.Application.Contracts.Order;
 
 namespace _01_LampshadeQuery.Contracts.Product
 {
@@ -10,5 +11,6 @@ namespace _01_LampshadeQuery.Contracts.Product
          List<ProductQueryModel> GetLatestArrivals();
          List<ProductQueryModel> Search(string value);
          ProductQueryModel GetProductWithPictures(string slug);
-    }
+         List<CartItem> GetInventoryStatus(List<CartItem> cartItems);
+     }
 }
