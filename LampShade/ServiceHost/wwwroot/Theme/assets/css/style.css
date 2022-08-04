@@ -4748,6 +4748,7 @@ select {
 	margin-bottom: 20px;
 	padding: 45px 50px;
 	background-color: #f2f2f2;
+    margin-top: 25px;
 }
 
 .cart-summary .cart-summary-wrap h4 {
@@ -5161,6 +5162,8 @@ select {
 	margin-top: 8px;
 	color: #707070;
 }
+
+
 
 /*-- Place Order --*/
 

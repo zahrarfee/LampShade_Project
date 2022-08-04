@@ -1,0 +1,5 @@
+F:\Practice\LampShade\LampShade\0_Framework\obj\Debug\netcoreapp5.0\0_Framework.csproj.AssemblyReference.cache
+F:\Practice\LampShade\LampShade\0_Framework\obj\Debug\netcoreapp5.0\0_Framework.GeneratedMSBuildEditorConfig.editorconfig
+F:\Practice\LampShade\LampShade\0_Framework\obj\Debug\netcoreapp5.0\0_Framework.AssemblyInfoInputs.cache
+F:\Practice\LampShade\LampShade\0_Framework\obj\Debug\netcoreapp5.0\0_Framework.AssemblyInfo.cs
+F:\Practice\LampShade\LampShade\0_Framework\obj\Debug\netcoreapp5.0\0_Framework.csproj.CoreCompileInputs.cache

@@ -1,3 +1,8 @@
+F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.csproj.AssemblyReference.cache
+F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.AssemblyInfoInputs.cache
+F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.AssemblyInfo.cs
+F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.csproj.CoreCompileInputs.cache
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Configuration.deps.json
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Configuration.dll
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\bin\Debug\netcoreapp3.1\DiscountManagement.Configuration.pdb
@@ -17,11 +22,6 @@ F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\bin\Debug\netco
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.pdb
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\bin\Debug\netcoreapp3.1\ShopManagement.Domain.pdb
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\bin\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.pdb
-F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.csproj.AssemblyReference.cache
-F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.GeneratedMSBuildEditorConfig.editorconfig
-F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.AssemblyInfoInputs.cache
-F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.AssemblyInfo.cs
-F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.csproj.CoreCompileInputs.cache
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.csproj.CopyComplete
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.dll
 F:\Practice\LampShade\LampShade\DiscountManagement.Configuration\obj\Debug\netcoreapp3.1\DiscountManagement.Configuration.pdb

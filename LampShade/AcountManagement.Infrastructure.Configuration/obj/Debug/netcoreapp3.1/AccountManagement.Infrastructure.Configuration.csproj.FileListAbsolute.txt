@@ -1,13 +1,10 @@
-F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.deps.json
-F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.dll
-F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.pdb
-F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.GeneratedMSBuildEditorConfig.editorconfig
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.AssemblyInfoInputs.cache
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.AssemblyInfo.cs
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.csproj.CoreCompileInputs.cache
-F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.dll
-F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.pdb
+F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.deps.json
+F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.dll
+F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.pdb
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\0_Framework.dll
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.dll
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Application.dll
@@ -18,4 +15,7 @@ F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bi
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\0_Framework.pdb
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.pdb
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.csproj.CopyComplete
+F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.dll
+F:\Practice\LampShade\LampShade\AcountManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\AccountManagement.Infrastructure.Configuration.pdb

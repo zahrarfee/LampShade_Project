@@ -185,13 +185,8 @@ namespace _01_LampshadeQuery.Query
                     var discountAmount = Math.Round((price * discuntRate) / 100);
                     product.PriceWithDiscount = (price - discountAmount).ToMoney();
 
-
-
-
-
                 }
-                
-
+              
             }
 
             product.Comments = _commentContext.Comments

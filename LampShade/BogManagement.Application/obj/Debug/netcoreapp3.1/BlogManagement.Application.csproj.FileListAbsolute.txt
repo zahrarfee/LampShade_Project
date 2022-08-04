@@ -1,3 +1,7 @@
+F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.AssemblyInfoInputs.cache
+F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.AssemblyInfo.cs
+F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.csproj.CoreCompileInputs.cache
 F:\Practice\LampShade\LampShade\BogManagement.Application\bin\Debug\netcoreapp3.1\BlogManagement.Application.deps.json
 F:\Practice\LampShade\LampShade\BogManagement.Application\bin\Debug\netcoreapp3.1\BlogManagement.Application.dll
 F:\Practice\LampShade\LampShade\BogManagement.Application\bin\Debug\netcoreapp3.1\BlogManagement.Application.pdb
@@ -7,10 +11,7 @@ F:\Practice\LampShade\LampShade\BogManagement.Application\bin\Debug\netcoreapp3.
 F:\Practice\LampShade\LampShade\BogManagement.Application\bin\Debug\netcoreapp3.1\BlogManagement.Application.Contracts.pdb
 F:\Practice\LampShade\LampShade\BogManagement.Application\bin\Debug\netcoreapp3.1\BlogManagement.Domain.pdb
 F:\Practice\LampShade\LampShade\BogManagement.Application\bin\Debug\netcoreapp3.1\0_Framework.pdb
-F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
-F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.AssemblyInfoInputs.cache
-F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.AssemblyInfo.cs
-F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.csproj.CoreCompileInputs.cache
 F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.csproj.CopyComplete
 F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.dll
 F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.pdb
+F:\Practice\LampShade\LampShade\BogManagement.Application\obj\Debug\netcoreapp3.1\BlogManagement.Application.csproj.AssemblyReference.cache

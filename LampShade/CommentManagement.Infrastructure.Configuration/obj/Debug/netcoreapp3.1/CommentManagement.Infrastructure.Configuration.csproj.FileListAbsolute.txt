@@ -1,8 +1,8 @@
-F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.GeneratedMSBuildEditorConfig.editorconfig
 F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.AssemblyInfoInputs.cache
 F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.AssemblyInfo.cs
 F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.csproj.CoreCompileInputs.cache
+F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.deps.json
 F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.dll
 F:\Practice\LampShade\LampShade\CommentManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\CommentManagement.Infrastructure.Configuration.pdb

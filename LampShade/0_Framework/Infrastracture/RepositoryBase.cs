@@ -40,7 +40,7 @@ namespace _0_Framework.Infrastracture
 
         public void SaveChange()
         {
-            _dbContext.SaveChanges();
+             _dbContext.SaveChanges();
         }
     }
 }

@@ -152,5 +152,12 @@ namespace _0_Framework.Application
                 ?.Value;
             return JsonConvert.DeserializeObject<List<int>>(permissions);
         }
+
+        public long CurrentAccountId()
+        {
+            if (IsAuthenticated())
+                return long.Parse(_contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == "AccountId")?.Value) ;
+            return 0;
+        }
     }
 }

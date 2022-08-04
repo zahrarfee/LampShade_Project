@@ -435,11 +435,19 @@
     =============================================*/
     
     
-    $('[name="payment-method"]').on('click', function () {
+    $('[name="paymentMethod"]').on('click', function () {
 
         var $value = $(this).attr('value');
 
-        $('.single-method p').slideUp();
+        $('.single-method-payment p').slideUp();
+        $('[data-method="' + $value + '"]').slideDown();
+
+    });
+    $('[name="sendMethod"]').on('click', function () {
+
+        var $value = $(this).attr('value');
+
+        $('.single-method-send p').slideUp();
         $('[data-method="' + $value + '"]').slideDown();
 
     });

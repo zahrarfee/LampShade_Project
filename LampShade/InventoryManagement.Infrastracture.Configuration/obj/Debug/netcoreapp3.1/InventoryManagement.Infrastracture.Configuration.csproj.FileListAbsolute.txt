@@ -1,3 +1,8 @@
+F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.GeneratedMSBuildEditorConfig.editorconfig
+F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.AssemblyInfoInputs.cache
+F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.AssemblyInfo.cs
+F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.csproj.CoreCompileInputs.cache
+F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.deps.json
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.dll
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\bin\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.pdb
@@ -17,11 +22,6 @@ F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.pdb
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\bin\Debug\netcoreapp3.1\ShopManagement.Domain.pdb
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\bin\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.pdb
-F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.csproj.AssemblyReference.cache
-F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.GeneratedMSBuildEditorConfig.editorconfig
-F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.AssemblyInfoInputs.cache
-F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.AssemblyInfo.cs
-F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.csproj.CoreCompileInputs.cache
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.csproj.CopyComplete
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.dll
 F:\Practice\LampShade\LampShade\InventoryManagement.Infrastracture.Configuration\obj\Debug\netcoreapp3.1\InventoryManagement.Infrastracture.Configuration.pdb
