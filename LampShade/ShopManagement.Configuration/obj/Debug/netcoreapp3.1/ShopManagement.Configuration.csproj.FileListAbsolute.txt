@@ -45,3 +45,11 @@ F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreap
 F:\Practice\LampShade\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp3.1\ShopManagement.Configuration.csproj.CopyComplete
 F:\Practice\LampShade\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp3.1\ShopManagement.Configuration.dll
 F:\Practice\LampShade\LampShade\ShopManagement.Configuration\obj\Debug\netcoreapp3.1\ShopManagement.Configuration.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Domain.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.pdb

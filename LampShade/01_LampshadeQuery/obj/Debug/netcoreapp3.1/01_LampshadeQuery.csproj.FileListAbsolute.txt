@@ -41,3 +41,9 @@ F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\ShopMa
 F:\Practice\LampShade\LampShade\01_LampshadeQuery\obj\Debug\netcoreapp3.1\01_LampshadeQuery.csproj.CopyComplete
 F:\Practice\LampShade\LampShade\01_LampshadeQuery\obj\Debug\netcoreapp3.1\01_LampshadeQuery.dll
 F:\Practice\LampShade\LampShade\01_LampshadeQuery\obj\Debug\netcoreapp3.1\01_LampshadeQuery.pdb
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\AccountManagement.Domain.dll
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.dll
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\AccountManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\01_LampshadeQuery\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.pdb

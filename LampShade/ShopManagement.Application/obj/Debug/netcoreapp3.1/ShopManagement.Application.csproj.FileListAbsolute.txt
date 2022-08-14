@@ -23,3 +23,9 @@ F:\Practice\LampShade\LampShade\ShopManagement.Application\obj\Debug\netcoreapp3
 F:\Practice\LampShade\LampShade\ShopManagement.Application\obj\Debug\netcoreapp3.1\ShopManagement.Application.dll
 F:\Practice\LampShade\LampShade\ShopManagement.Application\obj\Debug\netcoreapp3.1\ShopManagement.Application.pdb
 F:\Practice\LampShade\LampShade\ShopManagement.Application\obj\Debug\netcoreapp3.1\ShopManagement.Application.csproj.AssemblyReference.cache
+F:\Practice\LampShade\LampShade\ShopManagement.Application\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Application\bin\Debug\netcoreapp3.1\AccountManagement.Domain.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Application\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Application\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Application\bin\Debug\netcoreapp3.1\AccountManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Application\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.pdb

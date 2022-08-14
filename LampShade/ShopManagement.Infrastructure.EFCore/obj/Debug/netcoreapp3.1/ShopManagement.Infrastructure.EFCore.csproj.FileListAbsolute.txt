@@ -18,3 +18,9 @@ F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\n
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.pdb
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.genruntimeconfig.cache
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.EFCore.csproj.AssemblyReference.cache
+F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Domain.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.dll
+F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Domain.pdb

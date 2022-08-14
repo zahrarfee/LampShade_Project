@@ -12,6 +12,7 @@
     <ProjectReference Include="..\01_LampshadeQuery\01_LampshadeQuery.csproj" />
     <ProjectReference Include="..\ShopManagement.Application\ShopManagement.Application.csproj" />
     <ProjectReference Include="..\ShopManagement.Domain\ShopManagement.Domain.csproj" />
+    <ProjectReference Include="..\ShopManagement.Infrastructure.Acl\ShopManagement.Infrastructure.Acl.csproj" />
     <ProjectReference Include="..\ShopManagement.Infrastructure.EFCore\ShopManagement.Infrastructure.EFCore.csproj" />
   </ItemGroup>
 

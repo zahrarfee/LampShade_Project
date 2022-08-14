@@ -2030,6 +2030,48 @@
           "bin/placeholder/0_Framework.dll": {}
         }
       },
+      "AccountManagement.Application.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountManagement.Application.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountManagement.Application.Contracts.dll": {}
+        }
+      },
+      "AccountManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "AccountManagement.Application.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AccountManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountManagement.Domain.dll": {}
+        }
+      },
+      "AccountManagement.Infrastructure.EFCore/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AccountManagement.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4"
+        },
+        "compile": {
+          "bin/placeholder/AccountManagement.Infrastructure.EFCore.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AccountManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
       "InventoryManagement.Application.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2063,6 +2105,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "0_Framework": "1.0.0",
+          "AccountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
@@ -2107,6 +2150,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "AccountManagement.Domain": "1.0.0",
+          "AccountManagement.Infrastructure.EFCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "ShopManagement.Domain": "1.0.0"
@@ -6986,6 +7031,21 @@
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
     },
+    "AccountManagement.Application.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../AcountManagement.Application.Contracts/AccountManagement.Application.Contracts.csproj",
+      "msbuildProject": "../AcountManagement.Application.Contracts/AccountManagement.Application.Contracts.csproj"
+    },
+    "AccountManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AcountManagement.Domain/AccountManagement.Domain.csproj",
+      "msbuildProject": "../AcountManagement.Domain/AccountManagement.Domain.csproj"
+    },
+    "AccountManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "path": "../AcountManagement.Infrastructure.EFCore/AccountManagement.Infrastructure.EFCore.csproj",
+      "msbuildProject": "../AcountManagement.Infrastructure.EFCore/AccountManagement.Infrastructure.EFCore.csproj"
+    },
     "InventoryManagement.Application.Contract/1.0.0": {
       "type": "project",
       "path": "../InventoryManagement.Application.Contract/InventoryManagement.Application.Contract.csproj",
@@ -7090,7 +7150,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.108\\RuntimeIdentifierGraph.json"
       }
     }
   }

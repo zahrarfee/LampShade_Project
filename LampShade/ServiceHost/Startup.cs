@@ -21,6 +21,8 @@ using ShopManagement.Configuration;
 using CommentManagement.Infrastructure.Configuration;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
+using ShopManagement.Presentation;
+using InventoryManagement.Presentation;
 
 namespace ServiceHost
 {
@@ -81,15 +83,20 @@ namespace ServiceHost
             });
 
             services.AddRazorPages()
-                .AddMvcOptions(options=>options.Filters.Add<SecurityPageFilter>())
+                .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>())
                 .AddRazorPagesOptions(options =>
-            {
-                options.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
-                options.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
-                options.Conventions.AuthorizeAreaFolder("Administration", "/Discount", "Discount");
+                {
+                    options.Conventions.AuthorizeAreaFolder("Administration", "/", "AdminArea");
+                    options.Conventions.AuthorizeAreaFolder("Administration", "/Shop", "Shop");
+                    options.Conventions.AuthorizeAreaFolder("Administration", "/Discount", "Discount");
 
-            });
-                
+                }).AddApplicationPart(typeof(ProductController).Assembly)
+
+                .AddApplicationPart(typeof(InventoryController).Assembly)
+                .AddNewtonsoftJson();
+              
+
+
             //end Authorization
 
             //baraye seo

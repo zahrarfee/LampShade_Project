@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EdnrdE0ND9MwcfeWL9p4srLLoYvvh3MJEjh/a6Pw5HgE9wXvqauCgJ5PMjeKdzPSKNARI+mYxiYcFikeW6O6jg==",
+  "dgSpecHash": "UQbV7H1BjrX55drmAU4sEVtHAKmQYs34Z2zV2A293TzaV1HnhTSkL11iPs0eeiSrRxcuU2XsIF8JgotMePibKA==",
   "success": true,
   "projectFilePath": "F:\\Practice\\LampShade\\LampShade\\CommentManagement.Infrastructure.EFCore\\CommentManagement.Infrastructure.EFCore.csproj",
   "expectedPackageFiles": [

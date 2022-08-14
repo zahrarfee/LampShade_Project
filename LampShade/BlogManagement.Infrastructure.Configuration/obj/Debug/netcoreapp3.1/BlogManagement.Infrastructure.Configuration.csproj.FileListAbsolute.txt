@@ -45,3 +45,9 @@ F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\bin\
 F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\BlogManagement.Infrastructure.Configuration.csproj.CopyComplete
 F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\BlogManagement.Infrastructure.Configuration.dll
 F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\obj\Debug\netcoreapp3.1\BlogManagement.Infrastructure.Configuration.pdb
+F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Domain.dll
+F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.dll
+F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\BlogManagement.Infrastructure.Configuration\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.pdb

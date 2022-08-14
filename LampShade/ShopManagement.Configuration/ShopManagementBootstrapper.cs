@@ -19,7 +19,9 @@ using ShopManagement.Domain.OrderAgg;
 using ShopManagement.Domain.ProductAgg;
 using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
+using ShopManagement.Domain.Services;
 using ShopManagement.Domain.SlideAgg;
+using ShopManagement.Infrastructure.Acl;
 using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
 
@@ -58,6 +60,9 @@ namespace ShopManagement.Configuration
             services.AddTransient<IOrderRepository , OrderRepository>();
 
             services.AddTransient<IOrderApplication, OrderApplication>();
+
+
+            services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
 
             //singleton
 

@@ -38,12 +38,15 @@
           "CommentManagement.Infrastructure.Configuration": "1.0.0",
           "DiscountManagement.Configuration": "1.0.0",
           "InventoryManagement.Infrastracture.Configuration": "1.0.0",
+          "InventoryManagement.Presentation": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "5.0.4",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.4",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.2",
           "Nancy": "2.0.0",
           "ShopManagement.Configuration": "1.0.0",
+          "ShopManagement.Presentation": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies.Reference": "5.0.0.0",
@@ -464,15 +467,15 @@
           "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {}
         }
       },
-      "Microsoft.AspNetCore.JsonPatch/2.2.0": {
+      "Microsoft.AspNetCore.JsonPatch/5.0.4": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
           "Newtonsoft.Json": "13.0.2-beta1"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.JsonPatch.dll": {
-            "assemblyVersion": "2.2.0.0",
-            "fileVersion": "2.2.0.18316"
+            "assemblyVersion": "5.0.4.0",
+            "fileVersion": "5.0.421.11815"
           }
         },
         "compile": {
@@ -485,7 +488,7 @@
           "Microsoft.Net.Http.Headers": "2.2.0"
         }
       },
-      "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
           "Microsoft.AspNetCore.Authorization.Policy": "2.2.0",
@@ -506,15 +509,31 @@
       },
       "Microsoft.AspNetCore.Mvc.DataAnnotations/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.Localization": "2.2.0",
           "System.ComponentModel.Annotations": "5.0.0"
         }
       },
       "Microsoft.AspNetCore.Mvc.Formatters.Json/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.JsonPatch": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
+          "Microsoft.AspNetCore.JsonPatch": "5.0.4",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.JsonPatch": "5.0.4",
+          "Newtonsoft.Json": "13.0.2-beta1",
+          "Newtonsoft.Json.Bson": "1.0.2"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {
+            "assemblyVersion": "5.0.4.0",
+            "fileVersion": "5.0.421.11815"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0": {
@@ -522,11 +541,11 @@
           "Microsoft.AspNetCore.Antiforgery": "2.2.0",
           "Microsoft.AspNetCore.Diagnostics.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Html.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.2.0",
           "Microsoft.Extensions.WebEncoders": "2.2.0",
-          "Newtonsoft.Json.Bson": "1.0.1"
+          "Newtonsoft.Json.Bson": "1.0.2"
         }
       },
       "Microsoft.AspNetCore.Razor/2.2.0": {
@@ -1508,19 +1527,18 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Newtonsoft.Json.Bson/1.0.1": {
+      "Newtonsoft.Json.Bson/1.0.2": {
         "dependencies": {
-          "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "13.0.2-beta1"
         },
         "runtime": {
-          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.1.20722"
+            "fileVersion": "1.0.2.22727"
           }
         },
         "compile": {
-          "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
       "Portable.BouncyCastle/1.8.1.1": {
@@ -2976,6 +2994,7 @@
       },
       "InventoryManagement.Infrastracture.Configuration/1.0.0": {
         "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
           "InventoryManagement.Application": "1.0.0",
           "InventoryManagement.Domain": "1.0.0",
           "InventoryManagement.Infrastracture.EFCore": "1.0.0",
@@ -2991,6 +3010,7 @@
       "InventoryManagement.Infrastracture.EFCore/1.0.0": {
         "dependencies": {
           "0_Framework": "1.0.0",
+          "AccountManagement.Infrastructure.EFCore": "1.0.0",
           "InventoryManagement.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
@@ -3001,6 +3021,19 @@
         },
         "compile": {
           "InventoryManagement.Infrastracture.EFCore.dll": {}
+        }
+      },
+      "InventoryManagement.Presentation/1.0.0": {
+        "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
+          "InventoryManagement.Application.Contract": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "runtime": {
+          "InventoryManagement.Presentation.dll": {}
+        },
+        "compile": {
+          "InventoryManagement.Presentation.dll": {}
         }
       },
       "ShopManagement.Application/1.0.0": {
@@ -3034,6 +3067,7 @@
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
           "ShopManagement.Application": "1.0.0",
           "ShopManagement.Domain": "1.0.0",
+          "ShopManagement.Infrastructure.Acl": "1.0.0",
           "ShopManagement.Infrastructure.EFCore": "1.0.0"
         },
         "runtime": {
@@ -3055,8 +3089,22 @@
           "ShopManagement.Domain.dll": {}
         }
       },
+      "ShopManagement.Infrastructure.Acl/1.0.0": {
+        "dependencies": {
+          "InventoryManagement.Application.Contract": "1.0.0",
+          "ShopManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ShopManagement.Infrastructure.Acl.dll": {}
+        },
+        "compile": {
+          "ShopManagement.Infrastructure.Acl.dll": {}
+        }
+      },
       "ShopManagement.Infrastructure.EFCore/1.0.0": {
         "dependencies": {
+          "AccountManagement.Domain": "1.0.0",
+          "AccountManagement.Infrastructure.EFCore": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "ShopManagement.Domain": "1.0.0"
@@ -3066,6 +3114,18 @@
         },
         "compile": {
           "ShopManagement.Infrastructure.EFCore.dll": {}
+        }
+      },
+      "ShopManagement.Presentation/1.0.0": {
+        "dependencies": {
+          "01_LampshadeQuery": "1.0.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
+        },
+        "runtime": {
+          "ShopManagement.Presentation.dll": {}
+        },
+        "compile": {
+          "ShopManagement.Presentation.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery.Reference/5.0.0.0": {
@@ -4877,12 +4937,12 @@
       "path": "microsoft.aspnetcore.http.features/5.0.17",
       "hashPath": "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.JsonPatch/2.2.0": {
+    "Microsoft.AspNetCore.JsonPatch/5.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-o9BB9hftnCsyJalz9IT0DUFxz8Xvgh3TOfGWolpuf19duxB4FySq7c25XDYBmBMS+sun5/PsEUAi58ra4iJAoA==",
-      "path": "microsoft.aspnetcore.jsonpatch/2.2.0",
-      "hashPath": "microsoft.aspnetcore.jsonpatch.2.2.0.nupkg.sha512"
+      "sha512": "sha512-Nd/QZhdEX9tvuoz7BmeL6PWmimkpTjZ3MsUtmhP9xEjfGezthI4g3K/ggW/HO53Ow0LnjBx9hZKAcENVPzF2LA==",
+      "path": "microsoft.aspnetcore.jsonpatch/5.0.4",
+      "hashPath": "microsoft.aspnetcore.jsonpatch.5.0.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.Abstractions/2.2.0": {
       "type": "package",
@@ -4891,12 +4951,12 @@
       "path": "microsoft.aspnetcore.mvc.abstractions/2.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ALiY4a6BYsghw8PT5+VU593Kqp911U3w9f/dH9/ZoI3ezDsDAGiObqPu/HP1oXK80Ceu0XdQ3F0bx5AXBeuN/Q==",
-      "path": "microsoft.aspnetcore.mvc.core/2.2.0",
-      "hashPath": "microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512"
+      "sha512": "sha512-/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
+      "hashPath": "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.DataAnnotations/2.2.0": {
       "type": "package",
@@ -4911,6 +4971,13 @@
       "sha512": "sha512-ScWwXrkAvw6PekWUFkIr5qa9NKn4uZGRvxtt3DvtUrBYW5Iu2y4SS/vx79JN0XDHNYgAJ81nVs+4M7UE1Y/O+g==",
       "path": "microsoft.aspnetcore.mvc.formatters.json/2.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.formatters.json.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.NewtonsoftJson/5.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vCknZ6lfq2/UrX4KGmqsM5aDlO5gV0S2YS6ZkhMfr+OG/9lyF2SBRM5skRCiSyTPdyH96Zliu5DU8DPstAAW7Q==",
+      "path": "microsoft.aspnetcore.mvc.newtonsoftjson/5.0.4",
+      "hashPath": "microsoft.aspnetcore.mvc.newtonsoftjson.5.0.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0": {
       "type": "package",
@@ -5381,12 +5448,12 @@
       "path": "newtonsoft.json/13.0.2-beta1",
       "hashPath": "newtonsoft.json.13.0.2-beta1.nupkg.sha512"
     },
-    "Newtonsoft.Json.Bson/1.0.1": {
+    "Newtonsoft.Json.Bson/1.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
-      "path": "newtonsoft.json.bson/1.0.1",
-      "hashPath": "newtonsoft.json.bson.1.0.1.nupkg.sha512"
+      "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
+      "path": "newtonsoft.json.bson/1.0.2",
+      "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
     },
     "Portable.BouncyCastle/1.8.1.1": {
       "type": "package",
@@ -6349,6 +6416,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "InventoryManagement.Presentation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ShopManagement.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -6369,7 +6441,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ShopManagement.Infrastructure.Acl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ShopManagement.Infrastructure.EFCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShopManagement.Presentation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

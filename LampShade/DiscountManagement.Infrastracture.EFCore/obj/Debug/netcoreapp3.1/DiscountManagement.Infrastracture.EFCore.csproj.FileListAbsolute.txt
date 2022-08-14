@@ -24,3 +24,9 @@ F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\obj\Deb
 F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\obj\Debug\netcoreapp3.1\DiscountManagement.Infrastracture.EFCore.dll
 F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\obj\Debug\netcoreapp3.1\DiscountManagement.Infrastracture.EFCore.pdb
 F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\obj\Debug\netcoreapp3.1\DiscountManagement.Infrastracture.EFCore.genruntimeconfig.cache
+F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.dll
+F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Domain.dll
+F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.dll
+F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Application.Contracts.pdb
+F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Domain.pdb
+F:\Practice\LampShade\LampShade\DiscountManagement.Infrastracture.EFCore\bin\Debug\netcoreapp3.1\AccountManagement.Infrastructure.EFCore.pdb

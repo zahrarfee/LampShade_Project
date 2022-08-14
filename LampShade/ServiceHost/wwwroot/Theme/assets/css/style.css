@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+R@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
 
 /*=============================================
 =            CSS Index            =
@@ -4745,10 +4745,10 @@ select {
 }
 
 .cart-summary .cart-summary-wrap {
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 	padding: 45px 50px;
 	background-color: #f2f2f2;
-    margin-top: 25px;
+    /*margin-top: 25px;*/
 }
 
 .cart-summary .cart-summary-wrap h4 {
@@ -4829,6 +4829,48 @@ select {
 	background-color: #e33;
 }
 
+
+
+/* button*/
+
+	.cart-summary .cart-summary-button button {
+		line-height: 24px;
+		float: right;
+		width: 140px;
+		height: 36px;
+		margin-top: 10px;
+		margin-left: 20px;
+		padding: 5px 20px;
+		color: #707070;
+		border: 1px solid #999;
+		border-radius: 0;
+		background-color: transparent;
+	}
+
+		.cart-summary .cart-summary-button button:last-child {
+			margin-left: 0;
+		}
+
+		.cart-summary .cart-summary-button button:hover {
+			color: #fff;
+			border-color: #e33;
+			background-color: #e33;
+		}
+
+		.cart-summary .cart-summary-button button.checkout-btn {
+			font-weight: 400;
+			text-transform: uppercase;
+			color: #fff;
+			border-color: #292929;
+			background-color: #292929;
+			text-align: center;
+		}
+
+
+			.cart-summary .cart-summary-button button.checkout-btn:hover {
+				border-color: #e33;
+				background-color: #e33;
+			}
 /*=====  End of Cart  ======*/
 
 /*=============================================

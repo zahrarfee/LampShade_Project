@@ -10,13 +10,15 @@ namespace _0_Framework.Application.ZarinPal
         public string Message { get; set; }
         public string IssueTrackingNo { get; set; }
         public double PayAmount { get; set; }
+        public int SendMethod { get; set; }
 
-        public PaymentResult Succeeded(string message,string issueTrackingNo,double payAmount)
+        public PaymentResult Succeeded(string message,string issueTrackingNo,double payAmount,int sendMethod)
         {
             PayAmount = payAmount;
             IsSuccessful = true;
             Message = message;
             IssueTrackingNo = issueTrackingNo;
+            SendMethod = sendMethod;
             return this;
 
         }

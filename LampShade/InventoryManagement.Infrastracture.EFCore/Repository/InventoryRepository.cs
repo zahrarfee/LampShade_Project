@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using _0_Framework.Application;
 using _0_Framework.Infrastracture;
+using AccountManagement.Infrastructure.EFCore;
 using InventoryManagement.Application.Contract.Inventory;
 using InventoryManagement.Domain.InventoryAgg;
 using Microsoft.EntityFrameworkCore;
@@ -13,13 +14,15 @@ namespace InventoryManagement.Infrastracture.EFCore.Repository
 {
     public class InventoryRepository:RepositoryBase<long,Inventory> ,IInventoryRepository
     {
+        private readonly AccountContext _accountContext;
         private readonly ShopContext _shopContext; 
         private readonly InventoryContext _context;
 
-        public InventoryRepository(InventoryContext inventoryContext, ShopContext shopContext) : base(inventoryContext)
+        public InventoryRepository(InventoryContext inventoryContext, ShopContext shopContext, AccountContext accountContext) : base(inventoryContext)
         {
             _context = inventoryContext;
             _shopContext = shopContext;
+            _accountContext = accountContext;
         }
 
         public Inventory GetBy(long productId)
@@ -40,8 +43,9 @@ namespace InventoryManagement.Infrastracture.EFCore.Repository
 
         public List<InventoryOperationViewModel> GetOperationLog(long inventoryId)
         {
+            var accounts = _accountContext.Accounts.Select(x => new {x.Id, x.FullName}).ToList();
             var inventory = _context.Inventories.FirstOrDefault(x => x.Id == inventoryId);
-            return inventory.InventoryOperations.Select(x => new InventoryOperationViewModel
+            var operations = inventory.InventoryOperations.Select(x => new InventoryOperationViewModel
             {
                 Id = x.Id,
                 Operation = x.Operation,
@@ -49,7 +53,7 @@ namespace InventoryManagement.Infrastracture.EFCore.Repository
                 CurrentCount = x.CurrentCount,
                 Description = x.Description,
                 OperationDate = x.OperationDate.ToFarsi(),
-                Operator = "مدیر سیستم",
+                
                 OperatorId = x.OperatorId,
                 OrderId = x.OrderId
 
@@ -57,7 +61,12 @@ namespace InventoryManagement.Infrastracture.EFCore.Repository
 
             }).OrderByDescending(x=>x.Id).ToList();
 
+            foreach (var log in operations)
+            {
+                log.Operator = accounts.FirstOrDefault(x => x.Id == log.OperatorId)?.FullName;
+            }
 
+            return operations;
 
         }
 

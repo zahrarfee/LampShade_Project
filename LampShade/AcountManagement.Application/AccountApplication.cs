@@ -112,5 +112,10 @@ namespace AccountManagement.Application
         {
           return  _accountRepository.GetProfilePhoto();
         }
+
+        public List<AccountViewModel> GetAccounts()
+        {
+            return _accountRepository.GetAccounts();
+        }
      }
 }

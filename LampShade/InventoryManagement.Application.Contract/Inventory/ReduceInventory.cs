@@ -7,5 +7,18 @@
         public long OrderId { get; set; }
         public string Description { get; set; }
         public long InventoryId { get; set; }
+
+        public ReduceInventory()
+        {
+            
+        }
+
+        public ReduceInventory(long count, long productId, long orderId, string description)
+        {
+            Count = count;
+            ProductId = productId;
+            OrderId = orderId;
+            Description = description;
+        }
     }
 }
