@@ -17,5 +17,6 @@ namespace AccountManagement.Application.Contracts.Account
         void Logout();
         List<AccountViewModel> GetProfilePhoto();
         List<AccountViewModel> GetAccounts();
+        AccountViewModel GetAccountBy(long id);
     }
 }

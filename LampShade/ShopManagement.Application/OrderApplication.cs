@@ -1,6 +1,7 @@
 ﻿
 using System.Collections.Generic;
 using _0_Framework.Application;
+using _0_Framework.Application.Sms;
 using InventoryManagement.Application.Contract.Inventory;
 using Microsoft.Extensions.Configuration;
 using ShopManagement.Application.Contracts.Order;
@@ -16,14 +17,18 @@ namespace ShopManagement.Application
         private readonly IConfiguration _configuration;
         private readonly IInventoryApplication _inventoryApplication;
         private readonly IShopInventoryAcl _shopInventoryAcl ;
+        private readonly ISmsService _smsService;
+        private readonly IShopAccountAcl _shopAccountAcl;
 
-        public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper, IConfiguration configuration, IInventoryApplication inventoryApplication, IShopInventoryAcl shopInventoryAcl)
+        public OrderApplication(IOrderRepository orderRepository, IAuthHelper authHelper, IConfiguration configuration, IInventoryApplication inventoryApplication, IShopInventoryAcl shopInventoryAcl, ISmsService smsService, IShopAccountAcl shopAccountAcl)
         {
             _orderRepository = orderRepository;
             _authHelper = authHelper;
             _configuration = configuration;
             _inventoryApplication = inventoryApplication;
             _shopInventoryAcl = shopInventoryAcl;
+            _smsService = smsService;
+            _shopAccountAcl = shopAccountAcl;
         }
 
         public long PlaceOrder(Cart cart)
@@ -56,6 +61,9 @@ namespace ShopManagement.Application
             if (!_shopInventoryAcl.ReduceFromInventory(order.Items)) return "";
             _orderRepository.SaveChange();
 
+
+            //var (name, mobile ) = _shopAccountAcl.GetAccountBy(order.AccountId);
+            //_smsService.Send(mobile , $"{name} گرامی سفارش شما با شماره پیگیری{issueTrackingNo} با موفقیت پرداخت شد");
 
 
 

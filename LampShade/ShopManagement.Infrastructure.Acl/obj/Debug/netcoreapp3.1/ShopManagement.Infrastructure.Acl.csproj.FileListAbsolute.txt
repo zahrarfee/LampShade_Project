@@ -9,7 +9,6 @@ F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\bin\Debug\netc
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\bin\Debug\netcoreapp3.1\ShopManagement.Domain.pdb
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\bin\Debug\netcoreapp3.1\0_Framework.pdb
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\bin\Debug\netcoreapp3.1\ShopManagement.Application.Contracts.pdb
-F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.csproj.AssemblyReference.cache
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.GeneratedMSBuildEditorConfig.editorconfig
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.AssemblyInfoInputs.cache
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.AssemblyInfo.cs
@@ -17,3 +16,4 @@ F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netc
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.csproj.CopyComplete
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.dll
 F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.pdb
+F:\Practice\LampShade\LampShade\ShopManagement.Infrastructure.Acl\obj\Debug\netcoreapp3.1\ShopManagement.Infrastructure.Acl.csproj.AssemblyReference.cache

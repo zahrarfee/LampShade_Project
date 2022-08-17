@@ -5,6 +5,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using _0_Framework.Application.Email;
+using Newtonsoft.Json;
 using ShopManagement.Application.Contracts.Slide;
 
 namespace ServiceHost.Pages
@@ -12,22 +14,18 @@ namespace ServiceHost.Pages
     
     public class IndexModel : PageModel
     {
-        
-        
+        private readonly IEmailService _emailService;
 
-   
-
-        //private readonly ILogger<IndexModel> _logger;
-
-        //public IndexModel(ILogger<IndexModel> logger)
-        //{
-        //    _logger = logger;
-        //}
-
+        public IndexModel(IEmailService emailService)
+        {
+            _emailService = emailService;
+        }
         public void OnGet()
         {
-           
+
+            //_emailService.SendEmail("salam", "salam salam", "contact@atriya.com");
 
         }
+
     }
 }

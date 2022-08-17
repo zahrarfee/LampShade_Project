@@ -223,3 +223,6 @@ F:\Practice\LampShade\LampShade\BlogManagement.Presentation.Api\obj\Debug\net5.0
 F:\Practice\LampShade\LampShade\BlogManagement.Presentation.Api\bin\Debug\net5.0\InventoryManagement.Presentation.dll
 F:\Practice\LampShade\LampShade\BlogManagement.Presentation.Api\bin\Debug\net5.0\InventoryManagement.Presentation.pdb
 F:\Practice\LampShade\LampShade\BlogManagement.Presentation.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+F:\Practice\LampShade\LampShade\BlogManagement.Presentation.Api\bin\Debug\net5.0\SmsIrRestfulNetCore.dll
+F:\Practice\LampShade\LampShade\BlogManagement.Presentation.Api\bin\Debug\net5.0\ShopManagement.Infrastructure.Acl.dll
+F:\Practice\LampShade\LampShade\BlogManagement.Presentation.Api\bin\Debug\net5.0\ShopManagement.Infrastructure.Acl.pdb

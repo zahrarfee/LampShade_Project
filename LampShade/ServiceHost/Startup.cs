@@ -11,6 +11,8 @@ using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using System.Threading.Tasks;
 using _0_Framework.Application;
+using _0_Framework.Application.Email;
+using _0_Framework.Application.Sms;
 using _0_Framework.Application.ZarinPal;
 using _0_Framework.Infrastracture;
 using AccountManagement.Infrastructure.Configuration;
@@ -50,7 +52,9 @@ namespace ServiceHost
             services.AddTransient<IFileUploader, FileUploader>();
             services.AddTransient<IAuthHelper, AuthHelper>();
             services.AddTransient<IZarinPalFactory, ZarinPalFactory>();
-            
+            services.AddTransient<ISmsService, SmsService>();
+            services.AddTransient<IEmailService, EmailService>();
+
             //start authentication
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -81,6 +85,12 @@ namespace ServiceHost
                 option.AddPolicy("Discount"
                     , builder => builder.RequireRole(new List<string> { Roles.Administration }));
             });
+
+            //START CORS
+            //services.AddCors(options => options.AddPolicy("MyPolicy", builder =>
+            //    builder.WithOrigins("https://localhost/5002")));
+
+            //END CORS
 
             services.AddRazorPages()
                 .AddMvcOptions(options => options.Filters.Add<SecurityPageFilter>())
@@ -122,6 +132,7 @@ namespace ServiceHost
             app.UseCookiePolicy();
             app.UseRouting();
             app.UseAuthorization();
+            //app.UseCors("MyPolicy");
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();

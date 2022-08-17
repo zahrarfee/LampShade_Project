@@ -137,6 +137,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventoryManagement.Present
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopManagement.Infrastructure.Acl", "ShopManagement.Infrastructure.Acl\ShopManagement.Infrastructure.Acl.csproj", "{46666702-88C6-4CD7-BC04-42C125074183}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopManagement.Infrastructure.AccountAcl", "ShopManagement.Infrastructure.AccountAcl\ShopManagement.Infrastructure.AccountAcl.csproj", "{A178EB18-7766-4548-A670-E28CCB56B8EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,10 @@ Global
 		{46666702-88C6-4CD7-BC04-42C125074183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46666702-88C6-4CD7-BC04-42C125074183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46666702-88C6-4CD7-BC04-42C125074183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A178EB18-7766-4548-A670-E28CCB56B8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A178EB18-7766-4548-A670-E28CCB56B8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A178EB18-7766-4548-A670-E28CCB56B8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A178EB18-7766-4548-A670-E28CCB56B8EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -351,6 +357,7 @@ Global
 		{7E8E6062-6FFE-4539-9E6A-E529895C7332} = {5789446C-1668-4A37-993F-77AA455435D5}
 		{697F623C-C73C-4A3F-8C7C-82E50AD0D27B} = {7E8E6062-6FFE-4539-9E6A-E529895C7332}
 		{46666702-88C6-4CD7-BC04-42C125074183} = {0B25A55E-5C22-4F5D-9C63-6987ADD3BA24}
+		{A178EB18-7766-4548-A670-E28CCB56B8EF} = {0B25A55E-5C22-4F5D-9C63-6987ADD3BA24}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64B06B8F-9FCC-4F56-8A18-107D1C551EED}

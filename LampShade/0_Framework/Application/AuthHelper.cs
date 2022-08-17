@@ -98,6 +98,7 @@ namespace _0_Framework.Application
                 new Claim("Photo", account.ProfilePhoto),
 
                 new Claim("Username", account.UserName), // Or Use ClaimTypes.NameIdentifier
+                new Claim(ClaimTypes.MobilePhone, account.Mobile),
                 //new Claim("permissions", permissions),
                 //new Claim("Mobile", account.Mobile)
             };
@@ -158,6 +159,13 @@ namespace _0_Framework.Application
             if (IsAuthenticated())
                 return long.Parse(_contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == "AccountId")?.Value) ;
             return 0;
+        }
+
+        public string CurrentAccountMobile()
+        {
+            if (IsAuthenticated())
+                return _contextAccessor.HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.MobilePhone)?.Value;
+            return "";
         }
     }
 }

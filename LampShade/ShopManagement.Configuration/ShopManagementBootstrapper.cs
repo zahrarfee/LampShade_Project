@@ -2,6 +2,7 @@
 using _0_Framework.Domain;
 using _0_Framework.Infrastracture;
 using _01_LampshadeQuery.Contracts;
+using _01_LampshadeQuery.Contracts.Chart;
 using _01_LampshadeQuery.Contracts.Product;
 using _01_LampshadeQuery.Contracts.ProductCategory;
 using _01_LampshadeQuery.Contracts.Slide;
@@ -21,6 +22,7 @@ using ShopManagement.Domain.ProductCategoryAgg;
 using ShopManagement.Domain.ProductPictureAgg;
 using ShopManagement.Domain.Services;
 using ShopManagement.Domain.SlideAgg;
+using ShopManagement.Infrastructure.AccountAcl;
 using ShopManagement.Infrastructure.Acl;
 using ShopManagement.Infrastructure.EFCore;
 using ShopManagement.Infrastructure.EFCore.Repository;
@@ -51,6 +53,7 @@ namespace ShopManagement.Configuration
 
             services.AddTransient<IProductCategoryQuery, ProductCategoryQuery>();
             services.AddTransient<IProductQuery, ProductQuery>();
+            services.AddTransient<IChartQuery, ChartQuery>();
 
 
             services.AddTransient<IPermissionExposer, ShopPermissionExposer>();
@@ -63,6 +66,8 @@ namespace ShopManagement.Configuration
 
 
             services.AddTransient<IShopInventoryAcl, ShopInventoryAcl>();
+
+            services.AddTransient<IShopAccountAcl, ShopAccountAcl>();
 
             //singleton
 

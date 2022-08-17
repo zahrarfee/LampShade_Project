@@ -296,3 +296,7 @@ F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infr
 F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.Acl.pdb
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Orders\Index.cshtml.g.cs
 F:\Practice\LampShade\LampShade\ServiceHost\obj\Debug\net5.0\Razor\Areas\Administration\Pages\Shop\Orders\Items.cshtml.g.cs
+F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\SmsIrRestfulNetCore.dll
+F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.dll
+F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\ShopManagement.Infrastructure.AccountAcl.pdb
+F:\Practice\LampShade\LampShade\ServiceHost\bin\Debug\net5.0\MailKit.dll

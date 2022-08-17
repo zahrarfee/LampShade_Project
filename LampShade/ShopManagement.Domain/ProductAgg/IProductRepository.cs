@@ -15,6 +15,6 @@ namespace ShopManagement.Domain.ProductAgg
         void Remove(Product command);
         List<ProductViewModel> GetProducts();
         Product GetProductWithCategory(long id);
-
+        
     }
 }
